@@ -1,0 +1,321 @@
+@font-face {
+    font-family: 'Artegra-sans';
+    src: url(/fonts/ArtegraSans-Regular.eot);
+    src: url(/fonts/ArtegraSans-Regular.eot?#iefix) format('embedded-opentype'),
+        url(/fonts/ArtegraSans-Regular.otf) format('otf'),
+        url(/fonts/ArtegraSans-Regular.svg) format('svg'),
+        url(/fonts/ArtegraSans-Regular.ttf) format('truetype'),
+        url(/fonts/ArtegraSans-Regular.woff) format('woff'),
+        url(/fonts/ArtegraSans-Regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Artegra-sans';
+    src: url(/fonts/ArtegraSans-Medium.eot);
+    src: url(/fonts/ArtegraSans-Medium.eot?#iefix) format('embedded-opentype'),
+       url(/fonts/ArtegraSans-Medium.otf) format('otf'),
+       url(/fonts/ArtegraSans-Medium.svg#ArtegraSans-Medium) format('svg'),
+       url(/fonts/ArtegraSans-Medium.ttf) format('truetype'),
+       url(/fonts/ArtegraSans-Medium.woff) format('woff'),
+       url(/fonts/ArtegraSans-Medium.woff2) format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Artegra-sans';
+    src: url(/fonts/ArtegraSans-SemiBold.eot);
+    src: url(/fonts/ArtegraSans-SemiBold.eot?#iefix) format('embedded-opentype'),
+       url(/fonts/ArtegraSans-SemiBold.woff2) format('woff2'),
+       url(/fonts/ArtegraSans-SemiBold.woff) format('woff'),
+       url(/fonts/ArtegraSans-SemiBold.ttf) format('truetype'),
+       url(/fonts/ArtegraSans-SemiBold.svg#ArtegraSans-SemiBold) format('svg'),
+       url(/fonts/ArtegraSans-SemiBold.otf) format('otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Artegra-sans';
+    src: url(/fonts/ArtegraSans-Bold.eot);
+    src: url(/fonts/ArtegraSans-Bold.eot?#iefix) format('embedded-opentype'),
+         url(/fonts/ArtegraSans-Bold.otf) format('otf'),
+         url(/fonts/ArtegraSans-Bold.svg#ArtegraSans-Bold) format('svg'),
+         url(/fonts/ArtegraSans-Bold.ttf) format('truetype'),
+         url(/fonts/ArtegraSans-Bold.woff) format('woff'),
+         url(/fonts/ArtegraSans-Bold.woff2) format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* font-family: 'Cormorant Garamond', serif; */
+
+body {
+    margin: 0;
+    font-family: 'Artegra-sans';
+    font-size: 33px;
+    color: #FFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h1, h2 {
+   font-family: 'Cormorant Garamond', serif; 
+   font-weight: 700;
+   letter-spacing: 1.2px;
+}
+
+
+/* Container */
+
+
+.container {
+    width: 100%;
+    max-width: 1760px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+    background: #F3F8FF;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 31px 0;
+}
+
+.logo {
+    width: 51px;
+    height: 51px;
+}
+
+.navigation {
+    margin-left: 41px;
+}
+
+.nav-link {
+    font-size: 16px;
+    color: #1C202B;
+    text-decoration: none;
+    text-transform: uppercase;  
+}
+
+.nav-link:not(:last-of-type) {
+    margin-right: 90px;
+}
+
+.active {
+    font-weight: 600;
+    color: #018961;
+}
+
+.btn {
+    font-weight: 500;
+    font-size: 15px;
+    width: 305px;
+    height: 51px;
+    border-radius: 4px;
+    border: 1px solid #018961;
+    background: #E5F4F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Formats content */
+
+.formats {
+    height: 100%;
+    background: #018961;
+    padding-bottom: 50px;
+}
+
+.formats-title {
+    width: 710px;
+    font-size: 55px;
+    line-height: 63px; 
+    border-top: 2px solid #E5F4F1;
+    border-bottom: 2px solid #E5F4F1;
+    text-align: center;
+    padding: 20px 0;
+    
+}
+
+.formats-content {
+    display: flex;
+    padding-top: 130px;
+    flex-direction: column;
+    align-items: center;
+    gap: 69px;
+}
+
+.types {
+    display: flex;
+}
+
+.sides {
+    height: 340px;
+    width: 535px;
+    border: 2px solid;
+}
+
+.sides-title {
+    font-size: 45px;
+    width: 535px;
+    height: 64px;
+    background: #E5F4F1;
+    color: #018961;
+    text-align: center;
+}
+
+.sides-title-span {
+    font-weight: 500;
+}
+
+.sides-text {
+    width: 416px;
+    font-size: 28px;
+    line-height: 36px;
+    margin: 72px 0 0 86px;
+}
+
+.central {
+    width: 682px;
+    border-bottom: 2px solid;
+}
+
+.central-text {
+    font-size: 28px;
+    margin: 29px 0 0 116px;
+}
+
+.btn-wrapper {
+    position: relative;
+}
+
+.buy-course-btn {
+    color: #018961;
+    font-size: 32px;
+    width: 478px;
+    height: 84px;
+    border-radius: 25px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 82px auto 0;
+}
+
+.arrow {
+    position: absolute;
+    width: 172px;
+}
+
+.left {
+    left: 24%;
+    bottom: -8%;
+    transform: rotate(-4deg);
+}
+
+.right {
+    right: 24%;
+    bottom: -9%;
+    transform: rotate(8deg);
+}
+
+/* Footer */
+
+.footer {
+    height: 236px;
+    background: #F3F8FF;
+}
+
+.foot-logo {
+    width: 71px;
+    height: 71px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 42px;
+}
+
+.school-name {
+    color: #018961;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 265px;
+}
+
+.school-name-span {
+    color: #5D616B;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.footer-navigation {
+    margin-left: 139px;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    margin-right: 140px;
+}
+
+.media-img {
+    height: 24px;
+    width: 24px;
+}
+
+.footer-line {
+    width: 1481px;
+    height: 1.3px;
+    background: #1C202B80;
+    opacity: 0.5;
+    margin: 5px auto 14px;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-nav-link {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.footer-nav-link:not(:last-of-type) {
+    margin-right: 48px;
+}
+
+.phone-number {
+    color: #1C202B;
+    font-size: 14px;
+    opacity: 0.7;
+    width: 148px;
+    margin-right: 118px;
+}
+

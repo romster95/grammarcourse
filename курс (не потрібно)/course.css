@@ -1,0 +1,293 @@
+@font-face {
+    font-family: 'Artegra-sans';
+    src: url(/fonts/ArtegraSans-Regular.eot);
+    src: url(/fonts/ArtegraSans-Regular.eot?#iefix) format('embedded-opentype'),
+        url(/fonts/ArtegraSans-Regular.otf) format('otf'),
+        url(/fonts/ArtegraSans-Regular.svg) format('svg'),
+        url(/fonts/ArtegraSans-Regular.ttf) format('truetype'),
+        url(/fonts/ArtegraSans-Regular.woff) format('woff'),
+        url(/fonts/ArtegraSans-Regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Artegra-sans';
+    src: url(/fonts/ArtegraSans-Medium.eot);
+    src: url(/fonts/ArtegraSans-Medium.eot?#iefix) format('embedded-opentype'),
+       url(/fonts/ArtegraSans-Medium.otf) format('otf'),
+       url(/fonts/ArtegraSans-Medium.svg#ArtegraSans-Medium) format('svg'),
+       url(/fonts/ArtegraSans-Medium.ttf) format('truetype'),
+       url(/fonts/ArtegraSans-Medium.woff) format('woff'),
+       url(/fonts/ArtegraSans-Medium.woff2) format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Artegra-sans';
+    src: url(/fonts/ArtegraSans-SemiBold.eot);
+    src: url(/fonts/ArtegraSans-SemiBold.eot?#iefix) format('embedded-opentype'),
+       url(/fonts/ArtegraSans-SemiBold.woff2) format('woff2'),
+       url(/fonts/ArtegraSans-SemiBold.woff) format('woff'),
+       url(/fonts/ArtegraSans-SemiBold.ttf) format('truetype'),
+       url(/fonts/ArtegraSans-SemiBold.svg#ArtegraSans-SemiBold) format('svg'),
+       url(/fonts/ArtegraSans-SemiBold.otf) format('otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Artegra-sans';
+    src: url(/fonts/ArtegraSans-Bold.eot);
+    src: url(/fonts/ArtegraSans-Bold.eot?#iefix) format('embedded-opentype'),
+         url(/fonts/ArtegraSans-Bold.otf) format('otf'),
+         url(/fonts/ArtegraSans-Bold.svg#ArtegraSans-Bold) format('svg'),
+         url(/fonts/ArtegraSans-Bold.ttf) format('truetype'),
+         url(/fonts/ArtegraSans-Bold.woff) format('woff'),
+         url(/fonts/ArtegraSans-Bold.woff2) format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* font-family: 'Cormorant Garamond', serif; */
+
+body {
+    margin: 0;
+    font-family: 'Artegra-sans';
+    font-size: 33px;
+    color: #1C202B;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', serif; 
+    font-weight: 700;
+    letter-spacing: 1.2px;
+ }
+
+
+/* Container */
+
+
+.container {
+    width: 100%;
+    max-width: 1760px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+    background: #F3F8FF;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 31px 0;
+}
+
+.logo {
+    width: 51px;
+    height: 51px;
+}
+
+.navigation {
+    margin-left: 41px;
+}
+
+.nav-link {
+    font-size: 16px;
+    color: #1C202B;
+    text-decoration: none;
+    text-transform: uppercase;  
+}
+
+.nav-link:not(:last-of-type) {
+    margin-right: 90px;
+}
+
+.active {
+    font-weight: 600;
+    color: #0066A9;
+}
+
+.btn {
+    font-weight: 500;
+    font-size: 15px;
+    width: 305px;
+    height: 51px;
+    border-radius: 4px;
+    border: 1px solid #0066A9;
+    background: #DCF2FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Course plan */
+
+.course-plan {
+    height: 2294px;
+    background-image: url(/course/img/background.png);
+}
+
+.course-main-text {
+    width: 854px;
+    text-align: center;
+    padding-top: 89px;
+    margin: 0 auto;
+}
+
+.course-plan-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 160%;
+    opacity: 0.5;
+    margin: 35px 0 80px;
+}
+
+.timeline {
+    border-left: 6px solid #0066A9;
+    height: 1577px;
+    width: 1px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Topics */
+
+.topics {
+   position: absolute; 
+   top: 600px;
+   left: 583px;
+}
+
+.right-side {
+    margin-left: 353px;
+}
+
+.topic {
+    text-align: right;
+    list-style-position: inside;
+    width: 279px;
+}
+
+.topic-title {
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 0.5;
+}
+
+.topics-list {
+    font-size: 18px;
+    margin-top: -7px;
+}
+
+.empty {
+    list-style-type: none;
+}
+
+.right-topic {
+    text-align: left;
+}
+
+.right-list {
+    padding: 0;
+    list-style-position: outside;
+}
+
+.small-line {
+    width: 40px;
+    opacity: 0.3;
+    border-top: 1px solid #000;
+}
+
+.topic-wrapper {
+    display: flex;
+    align-items: baseline;
+    gap: 28px;
+}
+
+/* Footer */
+
+.footer {
+    height: 236px;
+    background: #F3F8FF;
+}
+
+.foot-logo {
+    width: 71px;
+    height: 71px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 42px;
+}
+
+.school-name {
+    color: #0066A9;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 265px;
+}
+
+.school-name-span {
+    color: #5D616B;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.footer-navigation {
+    margin-left: 139px;
+}
+
+.footer-line {
+    width: 1481px;
+    height: 1.3px;
+    background: #1C202B80;
+    opacity: 0.5;
+    margin: 41px auto 14px;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-nav-link {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.footer-nav-link:not(:last-of-type) {
+    margin-right: 48px;
+}
+
+.phone-number {
+    color: #1C202B;
+    font-size: 14px;
+    opacity: 0.7;
+    width: 148px;
+    margin-right: 118px;
+}
+
+

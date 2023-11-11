@@ -1,0 +1,323 @@
+@font-face {
+    font-family: 'Artegra-sans';
+    src: url(/fonts/ArtegraSans-Regular.eot);
+    src: url(/fonts/ArtegraSans-Regular.eot?#iefix) format('embedded-opentype'),
+        url(/fonts/ArtegraSans-Regular.otf) format('otf'),
+        url(/fonts/ArtegraSans-Regular.svg) format('svg'),
+        url(/fonts/ArtegraSans-Regular.ttf) format('truetype'),
+        url(/fonts/ArtegraSans-Regular.woff) format('woff'),
+        url(/fonts/ArtegraSans-Regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Artegra-sans';
+    src: url(/fonts/ArtegraSans-Medium.eot);
+    src: url(/fonts/ArtegraSans-Medium.eot?#iefix) format('embedded-opentype'),
+       url(/fonts/ArtegraSans-Medium.otf) format('otf'),
+       url(/fonts/ArtegraSans-Medium.svg#ArtegraSans-Medium) format('svg'),
+       url(/fonts/ArtegraSans-Medium.ttf) format('truetype'),
+       url(/fonts/ArtegraSans-Medium.woff) format('woff'),
+       url(/fonts/ArtegraSans-Medium.woff2) format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Artegra-sans';
+    src: url(/fonts/ArtegraSans-SemiBold.eot);
+    src: url(/fonts/ArtegraSans-SemiBold.eot?#iefix) format('embedded-opentype'),
+       url(/fonts/ArtegraSans-SemiBold.woff2) format('woff2'),
+       url(/fonts/ArtegraSans-SemiBold.woff) format('woff'),
+       url(/fonts/ArtegraSans-SemiBold.ttf) format('truetype'),
+       url(/fonts/ArtegraSans-SemiBold.svg#ArtegraSans-SemiBold) format('svg'),
+       url(/fonts/ArtegraSans-SemiBold.otf) format('otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Artegra-sans';
+    src: url(/fonts/ArtegraSans-Bold.eot);
+    src: url(/fonts/ArtegraSans-Bold.eot?#iefix) format('embedded-opentype'),
+         url(/fonts/ArtegraSans-Bold.otf) format('otf'),
+         url(/fonts/ArtegraSans-Bold.svg#ArtegraSans-Bold) format('svg'),
+         url(/fonts/ArtegraSans-Bold.ttf) format('truetype'),
+         url(/fonts/ArtegraSans-Bold.woff) format('woff'),
+         url(/fonts/ArtegraSans-Bold.woff2) format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* font-family: 'Cormorant Garamond', serif; */
+
+body {
+    margin: 0;
+    font-family: 'Artegra-sans';
+    font-size: 33px;
+    color: #1C202B;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', serif; 
+    font-weight: 700;
+    letter-spacing: 1.2px;
+ }
+
+
+/* Container */
+
+
+.container {
+    width: 100%;
+    max-width: 1760px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+    background: #F3F8FF;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 31px 0;
+}
+
+.logo {
+    width: 51px;
+    height: 51px;
+}
+
+.navigation {
+    margin-left: 41px;
+}
+
+.nav-link {
+    font-size: 16px;
+    color: #1C202B;
+    text-decoration: none;
+    text-transform: uppercase;  
+}
+
+.nav-link:not(:last-of-type) {
+    margin-right: 90px;
+}
+
+.active {
+    font-weight: 600;
+    color: #0066A9;
+}
+
+.btn {
+    font-weight: 500;
+    font-size: 15px;
+    width: 305px;
+    height: 51px;
+    border-radius: 4px;
+    border: 1px solid #0066A9;
+    background: #DCF2FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Course plan */
+
+.course-plan {
+    height: 3718px;
+    background-color: #DCF2FF;
+}
+
+.course-main-text {
+    width: 854px;
+    text-align: center;
+    padding-top: 89px;
+    margin: 0 auto;
+}
+
+.course-plan-title {
+    color: #0066A9;
+}
+
+.course-plan-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 160%;
+    margin: 35px 0 80px;
+}
+
+
+/* Topics */
+
+.topics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -58px;
+    margin-bottom: 73px;
+}
+
+.topic-wrapper {
+    width: 741px;
+}
+
+.topic {
+    display: flex;
+    flex-direction: column;
+}
+
+.topic-title {
+    width: 741px;
+    color: #0066A9;
+    text-align: left;
+    font-size: 35px;
+    font-weight: 700;
+    border-top: 3px solid #0066A9;
+    border-bottom: 3px solid #0066A9;
+    padding: 20px 0;
+}
+
+.topics-list {
+    font-size: 28px;
+    line-height: 160%; 
+    margin-top: -7px;
+    position: relative;
+    left: 292px;
+}
+
+.buy-course {
+    display: flex; 
+    margin: 0 auto;
+    position: relative;
+    width: 478px;
+}
+
+.btn-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 478px;
+    height: 70px;
+    border-radius: 12px;
+    border: 1.5px solid #0066A9;
+    background: #F3F8FF;
+    z-index: 1;
+}
+
+.buy-course-btn {
+    color: #0066A9;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 57px;
+    text-decoration: none;
+}
+
+.circle {
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    background: #B8E0FA;
+    border: 2px solid #0066A9;
+    position: absolute;
+    bottom: 30px;
+    right: -27px;
+}
+
+/* Footer */
+
+.footer {
+    height: 236px;
+    background: #F3F8FF;
+}
+
+.foot-logo {
+    width: 71px;
+    height: 71px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 42px;
+}
+
+.school-name {
+    color: #0066A9;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 265px;
+}
+
+.school-name-span {
+    color: #5D616B;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.footer-navigation {
+    margin-left: 139px;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    margin-right: 140px;
+}
+
+.media-img {
+    height: 24px;
+    width: 24px;
+}
+
+.footer-line {
+    width: 1481px;
+    height: 1.3px;
+    background: #1C202B80;
+    opacity: 0.5;
+    margin: 5px auto 14px;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-nav-link {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.footer-nav-link:not(:last-of-type) {
+    margin-right: 48px;
+}
+
+.phone-number {
+    color: #1C202B;
+    font-size: 14px;
+    opacity: 0.7;
+    width: 148px;
+    margin-right: 118px;
+}
+
+
