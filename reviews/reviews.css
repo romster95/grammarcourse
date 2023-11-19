@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'Artegra-sans';
+    src: url(/fonts/ArtegraSans-Regular.eot);
+    src: url(/fonts/ArtegraSans-Regular.eot?#iefix) format('embedded-opentype'),
+        url(/fonts/ArtegraSans-Regular.otf) format('otf'),
+        url(/fonts/ArtegraSans-Regular.svg) format('svg'),
+        url(/fonts/ArtegraSans-Regular.ttf) format('truetype'),
+        url(/fonts/ArtegraSans-Regular.woff) format('woff'),
+        url(/fonts/ArtegraSans-Regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Artegra-sans';
+    src: url(/fonts/ArtegraSans-Medium.eot);
+    src: url(/fonts/ArtegraSans-Medium.eot?#iefix) format('embedded-opentype'),
+       url(/fonts/ArtegraSans-Medium.otf) format('otf'),
+       url(/fonts/ArtegraSans-Medium.svg#ArtegraSans-Medium) format('svg'),
+       url(/fonts/ArtegraSans-Medium.ttf) format('truetype'),
+       url(/fonts/ArtegraSans-Medium.woff) format('woff'),
+       url(/fonts/ArtegraSans-Medium.woff2) format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Artegra-sans';
+    src: url(/fonts/ArtegraSans-SemiBold.eot);
+    src: url(/fonts/ArtegraSans-SemiBold.eot?#iefix) format('embedded-opentype'),
+       url(/fonts/ArtegraSans-SemiBold.woff2) format('woff2'),
+       url(/fonts/ArtegraSans-SemiBold.woff) format('woff'),
+       url(/fonts/ArtegraSans-SemiBold.ttf) format('truetype'),
+       url(/fonts/ArtegraSans-SemiBold.svg#ArtegraSans-SemiBold) format('svg'),
+       url(/fonts/ArtegraSans-SemiBold.otf) format('otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Artegra-sans';
+    src: url(/fonts/ArtegraSans-Bold.eot);
+    src: url(/fonts/ArtegraSans-Bold.eot?#iefix) format('embedded-opentype'),
+         url(/fonts/ArtegraSans-Bold.otf) format('otf'),
+         url(/fonts/ArtegraSans-Bold.svg#ArtegraSans-Bold) format('svg'),
+         url(/fonts/ArtegraSans-Bold.ttf) format('truetype'),
+         url(/fonts/ArtegraSans-Bold.woff) format('woff'),
+         url(/fonts/ArtegraSans-Bold.woff2) format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* font-family: 'Cormorant Garamond', serif; */
+
+body {
+    margin: 0;
+    font-family: 'Artegra-sans';
+    font-size: 33px;
+    color: #1C202B;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h1, h2, h3 {
+   font-family: 'Cormorant Garamond', serif; 
+   font-weight: 700;
+   letter-spacing: 1.2px;
+}
+
+
+/* Container */
+
+
+.container {
+    width: 100%;
+    max-width: 1760px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+    height: 100%;
+    max-height: 75px;
+    padding: 12px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 31px;
+}
+
+.logo {
+    width: 51px;
+    height: 51px;
+}
+
+.navigation {
+    margin-left: 41px;
+}
+
+.nav-link {
+    font-size: 16px;
+    color: #1C202B;
+    text-decoration: none;
+    text-transform: uppercase;  
+}
+
+.nav-link:not(:last-of-type) {
+    margin-right: 90px;
+}
+
+.active {
+    font-weight: 600;
+    color: #0066A9;
+}
+
+.btn {
+    font-weight: 500;
+    font-size: 15px;
+    width: 305px;
+    height: 51px;
+    border-radius: 4px;
+    border: 1px solid #0066A9;
+    background: #DCF2FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Reviews */
+
+.reviews-title {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.review {
+    width: 443px;
+    height: 398px;
+    fill: #FFF;
+    border: solid 0.695px #000;
+    border-radius: 35px;
+    box-shadow: 8px -8px 0px 0px #DCF2FF;
+}
+
+.review-title {
+    text-align: justify;
+    font-size: 31px;
+    font-weight: 600;
+    line-height: 140%; 
+}
+
+.review-text {
+    text-align: justify;
+    width: 100%;
+    max-width: 327px;
+    font-size: 16px;
+    line-height: 140%; 
+}
+
+
+
+
+
