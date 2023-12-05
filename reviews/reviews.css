@@ -138,9 +138,18 @@ h1, h2, h3 {
 
 /* Reviews */
 
+.reviews {
+    margin: 100px 0;
+}
+
+.swiper {
+    width: 100%;
+    max-width: 1000px;
+}
+
 .reviews-title {
     text-align: center;
-    margin-top: 100px;
+    
 }
 
 .two-reviews {
@@ -184,8 +193,95 @@ h1, h2, h3 {
     line-height: 140%; 
 }
 
+.swiper-button-prev {
+    left: 19% !important; 
+}
 
+.swiper-button-next {
+    right: 19% !important;
+}
 
+/* Footer */
+
+.footer {
+    height: 236px;
+    background: #F3F8FF;
+}
+
+.foot-logo {
+    width: 71px;
+    height: 71px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 42px;
+}
+
+.school-name {
+    color: #0066A9;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 265px;
+}
+
+.school-name-span {
+    color: #5D616B;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.footer-navigation {
+    margin-left: 139px;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    margin-right: 140px;
+}
+
+.media-img {
+    height: 24px;
+    width: 24px;
+}
+
+.footer-line {
+    width: 1481px;
+    height: 1.3px;
+    background: #1C202B80;
+    opacity: 0.5;
+    margin: 5px auto 14px;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-nav-link {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.footer-nav-link:not(:last-of-type) {
+    margin-right: 48px;
+}
+
+.phone-number {
+    color: #1C202B;
+    font-size: 14px;
+    opacity: 0.7;
+    width: 148px;
+    margin-right: 118px;
+}
 
 
 
