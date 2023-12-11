@@ -1,51 +1,51 @@
 @font-face {
     font-family: 'Artegra-sans';
-    src: url(/fonts/ArtegraSans-Regular.eot);
-    src: url(/fonts/ArtegraSans-Regular.eot?#iefix) format('embedded-opentype'),
-        url(/fonts/ArtegraSans-Regular.otf) format('otf'),
-        url(/fonts/ArtegraSans-Regular.svg) format('svg'),
-        url(/fonts/ArtegraSans-Regular.ttf) format('truetype'),
-        url(/fonts/ArtegraSans-Regular.woff) format('woff'),
-        url(/fonts/ArtegraSans-Regular.woff2) format('woff2');
+    src: url(../fonts/ArtegraSans-Regular.eot);
+    src: url(../fonts/ArtegraSans-Regular.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/ArtegraSans-Regular.otf) format('otf'),
+        url(../fonts/ArtegraSans-Regular.svg) format('svg'),
+        url(../fonts/ArtegraSans-Regular.ttf) format('truetype'),
+        url(../fonts/ArtegraSans-Regular.woff) format('woff'),
+        url(../fonts/ArtegraSans-Regular.woff2) format('woff2');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Artegra-sans';
-    src: url(/fonts/ArtegraSans-Medium.eot);
-    src: url(/fonts/ArtegraSans-Medium.eot?#iefix) format('embedded-opentype'),
-       url(/fonts/ArtegraSans-Medium.otf) format('otf'),
-       url(/fonts/ArtegraSans-Medium.svg#ArtegraSans-Medium) format('svg'),
-       url(/fonts/ArtegraSans-Medium.ttf) format('truetype'),
-       url(/fonts/ArtegraSans-Medium.woff) format('woff'),
-       url(/fonts/ArtegraSans-Medium.woff2) format('woff2');
+    src: url(../fonts/ArtegraSans-Medium.eot);
+    src: url(../fonts/ArtegraSans-Medium.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/ArtegraSans-Medium.otf) format('otf'),
+       url(../fonts/ArtegraSans-Medium.svg#ArtegraSans-Medium) format('svg'),
+       url(../fonts/ArtegraSans-Medium.ttf) format('truetype'),
+       url(../fonts/ArtegraSans-Medium.woff) format('woff'),
+       url(../fonts/ArtegraSans-Medium.woff2) format('woff2');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Artegra-sans';
-    src: url(/fonts/ArtegraSans-SemiBold.eot);
-    src: url(/fonts/ArtegraSans-SemiBold.eot?#iefix) format('embedded-opentype'),
-       url(/fonts/ArtegraSans-SemiBold.woff2) format('woff2'),
-       url(/fonts/ArtegraSans-SemiBold.woff) format('woff'),
-       url(/fonts/ArtegraSans-SemiBold.ttf) format('truetype'),
-       url(/fonts/ArtegraSans-SemiBold.svg#ArtegraSans-SemiBold) format('svg'),
-       url(/fonts/ArtegraSans-SemiBold.otf) format('otf');
+    src: url(../fonts/ArtegraSans-SemiBold.eot);
+    src: url(../fonts/ArtegraSans-SemiBold.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/ArtegraSans-SemiBold.woff2) format('woff2'),
+       url(../fonts/ArtegraSans-SemiBold.woff) format('woff'),
+       url(../fonts/ArtegraSans-SemiBold.ttf) format('truetype'),
+       url(../fonts/ArtegraSans-SemiBold.svg#ArtegraSans-SemiBold) format('svg'),
+       url(../fonts/ArtegraSans-SemiBold.otf) format('otf');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Artegra-sans';
-    src: url(/fonts/ArtegraSans-Bold.eot);
-    src: url(/fonts/ArtegraSans-Bold.eot?#iefix) format('embedded-opentype'),
-         url(/fonts/ArtegraSans-Bold.otf) format('otf'),
-         url(/fonts/ArtegraSans-Bold.svg#ArtegraSans-Bold) format('svg'),
-         url(/fonts/ArtegraSans-Bold.ttf) format('truetype'),
-         url(/fonts/ArtegraSans-Bold.woff) format('woff'),
-         url(/fonts/ArtegraSans-Bold.woff2) format('woff2');
+    src: url(../fonts/ArtegraSans-Bold.eot);
+    src: url(../fonts/ArtegraSans-Bold.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/ArtegraSans-Bold.otf) format('otf'),
+         url(../fonts/ArtegraSans-Bold.svg#ArtegraSans-Bold) format('svg'),
+         url(../fonts/ArtegraSans-Bold.ttf) format('truetype'),
+         url(../fonts/ArtegraSans-Bold.woff) format('woff'),
+         url(../fonts/ArtegraSans-Bold.woff2) format('woff2');
     font-weight: 700;
     font-style: normal;
 }
