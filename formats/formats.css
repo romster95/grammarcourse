@@ -109,6 +109,13 @@ h1, h2 {
     color: #1C202B;
     text-decoration: none;
     text-transform: uppercase;  
+    transition: font-weight 0.2s, color 0.2s;
+}
+
+.nav-link:hover {
+    transition: 0.2s;
+    font-weight: 600; 
+    color: #018961;
 }
 
 .nav-link:not(:last-of-type) {
@@ -133,6 +140,13 @@ h1, h2 {
     justify-content: center;
     text-decoration: none;
     color: #000;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background: #018961;
+    color: #E5F4F1; 
+    transition: 0.3s;
 }
 
 /* Formats content */
@@ -217,7 +231,14 @@ h1, h2 {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    margin: 82px auto 0;
+    margin: 192px auto 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+.buy-course-btn:hover {
+    background: #d3d3d3;
+    color: #018961; 
+    transition: 0.3s;
 }
 
 .arrow {

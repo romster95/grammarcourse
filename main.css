@@ -108,6 +108,13 @@ h1, h2 {
     color: #1C202B;
     text-decoration: none;
     text-transform: uppercase;  
+    transition: font-weight 0.2s, color 0.2s;
+}
+
+.nav-link:hover {
+    transition: 0.2s;
+    font-weight: 600; 
+    color: #0066A9;
 }
 
 .nav-link:not(:last-of-type) {
@@ -132,6 +139,13 @@ h1, h2 {
     justify-content: center;
     text-decoration: none;
     color: #000;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background: #0066A9;
+    color: #DCF2FF; 
+    transition: 0.3s;
 }
 
 
@@ -414,7 +428,7 @@ h1, h2 {
     background: #DCC09552;
 }
 
-.test {
+.quotes {
     font-size: 35px;
     line-height: 40px;
     margin: 0;
@@ -428,7 +442,7 @@ h1, h2 {
     margin: 4px auto 22px;
 }
 
-.bottom-test {
+.bottom-quotes {
     padding: 0 56px 40px 0;
     text-align: right;
 }
@@ -473,6 +487,13 @@ h1, h2 {
     justify-content: center;
     text-decoration: none;
     margin: 192px auto 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+.buy-course-btn:hover {
+    background: #d3d3d3;
+    color: #018961; 
+    transition: 0.3s;
 }
 
 .arrow {

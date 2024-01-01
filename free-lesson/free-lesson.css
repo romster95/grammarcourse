@@ -110,6 +110,13 @@ h1 {
     color: #1C202B;
     text-decoration: none;
     text-transform: uppercase;  
+    transition: font-weight 0.2s, color 0.2s;
+}
+
+.nav-link:hover {
+    transition: 0.2s;
+    font-weight: 600; 
+    color: #018961;
 }
 
 .nav-link:not(:last-of-type) {
@@ -118,7 +125,7 @@ h1 {
 
 .active {
     font-weight: 600;
-    color: #0066A9;
+    color: #018961;
 }
 
 .btn {
@@ -134,6 +141,13 @@ h1 {
     justify-content: center;
     text-decoration: none;
     color: #000;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background: #018961;
+    color: #E5F4F1; 
+    transition: 0.3s;
 }
 
  /* Main screen of free lesson */
@@ -211,6 +225,12 @@ h1 {
     text-align: center;
     font-size: 20px;
     margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.form-btn:hover {
+    transition: 0.3s;
+    background: #0742a8;
 }
 
 /* Footer */

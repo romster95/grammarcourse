@@ -110,6 +110,13 @@ h1, h2, h3 {
     color: #1C202B;
     text-decoration: none;
     text-transform: uppercase;  
+    transition: font-weight 0.2s, color 0.2s;
+}
+
+.nav-link:hover {
+    transition: 0.2s;
+    font-weight: 600; 
+    color: #0066A9;
 }
 
 .nav-link:not(:last-of-type) {
@@ -134,6 +141,13 @@ h1, h2, h3 {
     justify-content: center;
     text-decoration: none;
     color: #000;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background: #0066A9;
+    color: #DCF2FF; 
+    transition: 0.3s;
 }
 
 /* Reviews */
@@ -195,10 +209,12 @@ h1, h2, h3 {
 
 .swiper-button-prev {
     left: 19% !important; 
+    color: #0066A9 !important;
 }
 
 .swiper-button-next {
     right: 19% !important;
+    color: #0066A9 !important;
 }
 
 /* Footer */
