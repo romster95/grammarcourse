@@ -521,7 +521,6 @@ h1, h2 {
 /* FAQ */
 
 .faq {
-    margin-left: 248px;
     margin-bottom: 122px;
 }
 
@@ -529,7 +528,9 @@ h1, h2 {
     display: flex;
     flex-direction: column;
     gap: 52px;
-    margin-top: 56px;
+    width: 83%;
+    /* max-width: 1465px; */
+    margin: 56px auto 0;
 }
 
 .question {
@@ -584,8 +585,8 @@ h1, h2 {
 }
 
 .answer-text {
-    width: 1176px;
-    padding-left: 52px;
+    width: 89.6%;
+    padding-left: 4%;
 }
 
 .answer-list {
