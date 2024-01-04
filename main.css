@@ -282,6 +282,7 @@ h1, h2 {
     justify-content: center;
     margin-top: 108px;
     gap: 36px;
+    margin-bottom: 100px;
 }
 
 .eng-lvl {
@@ -390,7 +391,6 @@ h1, h2 {
 }
 
 .first-article {
-    color: var(--2, #0066A9);
     font-size: 16px;
     font-weight: 500;
     width: 100%;
@@ -404,10 +404,10 @@ h1, h2 {
 .second-article {
     width: 100%;
     max-width: 428px;
-    height: 162px;
     font-size: 16px;
     font-weight: 500;
     line-height: 40px; 
+    text-align: justify;
 }
 
 .teaching-years {
@@ -438,10 +438,12 @@ h1, h2 {
 
 .third-article-text {
     width: 100%;
-    max-width: 835px;
+    max-width: 812px;
     font-size: 20px;
     line-height: 40px;
+    padding-left: 20px;
     margin: 4px auto 22px;
+    text-align: justify;
 }
 
 .bottom-quotes {
@@ -452,7 +454,6 @@ h1, h2 {
 /* Buy course */
 
 .buy-course {
-    margin-top: 100px;
     padding-bottom: 100px;
 }
 
@@ -504,8 +505,8 @@ h1, h2 {
 }
 
 .left {
-    left: 20%;
-    bottom: 4%;
+    left: 19.5%;
+    bottom: -31%;
 }
 
 .middle {
@@ -514,8 +515,8 @@ h1, h2 {
 }
 
 .right {
-    right: 21%;
-    bottom: 12%;
+    right: 20.5%;
+    bottom: -15%;
 }
 
 /* FAQ */
@@ -696,4 +697,311 @@ h1, h2 {
     opacity: 0.7;
     width: 148px;
     margin-right: 118px;
+}
+
+@media (max-width: 1600px) {
+    .container {
+        max-width: 1326px;
+    }
+
+    .header {
+        height: 60px;
+    }
+
+    .logo {
+        width: 47px;
+        height: 47px;
+    }
+    
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+        width: 300px;
+        height: 47px;
+    }
+
+    .intro {
+        width: 100%;
+        background-image: url(img/intro-bg1600.png);
+        background-repeat: no-repeat;
+        padding: 16% 0;
+    }
+    
+    .intro-text {
+        font-size: 15px;
+    }
+    
+    .intro-text-span {
+        font-size: 50px; 
+    }
+
+    .about-us {
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+
+    .about-us-title {
+        font-size: 50px;
+        margin-left: 32px;
+    }
+
+    .features {
+        margin: 45px 0 60px 0;
+    }
+
+    .feature {
+        font-size: 22px;
+        line-height: 34px;
+    }
+
+    .line {
+        border-left: 4px solid #E5F4F1;
+        height: 210px;
+    }
+
+    .about-education {
+        max-width: 1138px;
+        height: 280px;
+    }
+
+    .circle {
+        width: 75px;
+        height: 75px;
+        border: 6px solid #E5F4F1;
+    }
+
+    .about-education-title {
+        font-size: 32px;
+    }
+
+    .about-education-text {
+        width: 980px;
+        font-size: 22px;
+        margin-bottom: -12px;
+    }
+
+    .for-user-wrap {
+        margin-top: 65px;
+        gap: 32px;
+        margin-bottom: 85px;
+    }
+
+    .for-user-title {
+        font-size: 50px;
+        margin-top: 70px;
+        margin-left: 34px;
+    }
+
+    .eng-lvl {
+        margin-bottom: 12px;
+    }
+
+    .eng-lvl-title {
+        font-size: 15px;
+    }
+
+    .horizontal-line {
+        max-width: 210px;
+    }
+
+    .vertical-line {
+        height: 14px;
+        bottom: 4px;
+        left: 159px;
+    }
+
+    .degrees {
+        gap: 24px;
+    }
+
+    .degree {
+        font-size: 13px;
+    }
+
+    .left-img {
+        width: 130px;
+        height: 139px;
+    }
+
+    .right-images {
+        margin-top: 51px;
+    }
+
+    .right-img {
+        height: 180px;
+    }
+
+    .last-article {
+        width: 254px;
+        height: 130px;
+    }
+
+    .last-article-text {
+        width: 200px;
+        font-size: 14px;
+        padding-top: 15px;
+        padding-left: 30px;
+    }
+
+    .articles {
+        gap: 30px;
+    }
+
+    .first-article-block {
+        max-width: 400px;
+        height: 150px;
+    }
+
+    .first-article {
+        font-size: 14px;
+        max-width: 360px;
+        line-height: 36px;
+        padding-left: 32px;
+    }
+
+    .second-article {
+        height: 140px;
+        max-width: 430px;
+        padding-top: 10px;
+        font-size: 14px;
+        line-height: 36px;
+    }
+
+    .teaching-years {
+        font-size: 18px;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    .third-article {
+        max-width: 845px;
+    }
+
+    .quotes {
+        font-size: 32px;
+        line-height: 36px;
+        padding: 28px 0 0 25px;
+    }
+
+    .third-article-text {
+        max-width: 760px;
+        font-size: 16px;
+        line-height: 36px;
+        padding-left: 12px;
+        margin: 4px auto 18px;
+    }
+
+    .bottom-quotes {
+        padding: 0 35px 15px 0;
+    }
+
+    .for-who-content {
+        gap: 6%;
+        margin-top: 70px;
+    }
+
+    .element-img {
+        width: 320px;
+    }
+
+    .element-text {
+        width: 320px;
+        font-size: 22px;
+    }
+
+    .left {
+        left: 18.5%;
+        bottom: -15%;
+        width: 190px;
+    }
+
+    .middle {
+        right: 45%;
+        bottom: 108%;
+        height: 150px;
+    }
+
+    .buy-course-btn {
+        font-size: 26px;
+        width: 32%;
+        height: 74px;
+        margin: 135px auto 0;
+    }
+
+    .right {
+        right: 18.5%;
+        bottom: -10%;
+        width: 190px;
+    }
+
+    .faq {
+        margin-bottom: 100px;
+    }
+
+    .faq-questions {
+        gap: 45px;
+        margin: 45px auto 0;
+    }
+
+    .question-title {
+        font-size: 20px;
+        padding: 28px 40px;
+        max-width: 1110px;
+    }
+
+    .activated {
+        padding-top: 45px;
+    }
+
+    .activated::after {
+        top: 41px;
+    }
+
+    .answer {
+        margin-top: -16px;
+        font-size: 17px;
+        
+    }
+
+    .footer {
+        height: 200px;
+    }
+
+    .footer-logo {
+        padding-top: 20px;
+    }
+
+    .foot-logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .school-name {
+        font-size: 19px;
+        width: 230px;
+    }
+
+    .school-name-span {
+        font-size: 19px;
+    }
+
+    .social-media {
+        gap: 17px;
+    }
+
+    .footer-line {
+        width: 80%;
+        margin: 0px auto 4px;
+    }
+
+    .footer-nav-link:not(:last-of-type) {
+        margin-right: 40px;
+    }
+
+    .phone-number {
+        margin-top: 18px;
+    }
 }
