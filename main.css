@@ -728,9 +728,6 @@ h1, h2 {
     }
 
     .intro {
-        width: 100%;
-        background-image: url(img/intro-bg1600.png);
-        background-repeat: no-repeat;
         padding: 16% 0;
     }
     
@@ -1305,5 +1302,328 @@ h1, h2 {
         font-size: 12px;
         width: 117px;
         margin-right: 105px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1120px;
+    }
+    
+    .header {
+        height: 50px;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .navigation {
+        margin-top: -5px;
+        margin-left: 5px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .btn {
+        font-size: 12px;
+        width: 245px;
+        height: 38px;
+    }
+
+    .intro-text {
+        font-size: 12px;
+    }
+
+    .intro-text-span {
+        font-size: 40px;
+    }
+
+    .intro-btn {
+        font-size: 13px;
+        height: 47px;
+    }
+
+    .about-us {
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+
+    .about-us-title {
+        font-size: 38px;
+        margin-left: 40px;
+    }
+
+    .features {
+        margin: 32px 0 40px 55px;
+        gap: 6%;
+    }
+
+    .feature {
+        font-size: 18px;
+        width: 415px;
+    }
+
+    .line {
+        border-left: 3px solid #E5F4F1;
+        height: 178px;
+    }
+
+    .about-education {
+        max-width: 910px;
+        height: 238px;
+    }
+
+    .circle {
+        width: 65px;
+        height: 65px;
+        border: 6px solid #E5F4F1;
+    }
+
+    .education-content {
+        padding-top: 32px;
+        margin-left: 48px;
+    }
+
+    .about-education-title {
+        font-size: 26px;
+    }
+
+    .about-education-text {
+        width: 800px;
+        font-size: 18px;
+    }
+
+    .for-user-wrap {
+        margin-top: 50px;
+        gap: 28px;
+        margin-bottom: 50px;
+    }
+
+    .for-user-title {
+        font-size: 38px;
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+
+    .eng-lvl-title {
+        font-size: 12px;
+    }
+
+    .degrees {
+        gap: 22px;
+    }
+
+    .degree {
+        font-size: 10px;
+    }
+
+    .horizontal-line {
+        max-width: 179px;
+        border-top: 4px solid #0066A9;
+    }
+
+    .vertical-line {
+        height: 12px;
+        left: 137px;
+        border-left: 4px solid #0066A9;
+    }
+
+    .left-img {
+        width: 120px;
+        height: 131px;
+    }
+
+    .right-img {
+        height: 170px;
+        width: 135px;
+    }
+
+    .last-article {
+        width: 215px;
+        height: 110px;
+    }
+
+    .last-article-text {
+        width: 170px;
+        font-size: 12px;
+        padding-left: 26px;
+    }
+
+    .articles {
+        gap: 24px;
+    }
+
+    .first-article-block {
+        max-width: 340px;
+        height: 140px;
+    }
+
+    .first-article {
+        font-size: 12px;
+        padding-left: 17px;
+        padding-top: 16px;
+        max-width: 300px;
+    }
+
+    .second-article {
+        height: 134px;
+        max-width: 350px;
+        padding-top: 5px;
+        font-size: 12px;
+        line-height: 36px;
+    }
+
+    .second-article-text {
+        padding-left: 6px;
+    }
+
+    .teaching-years {
+        font-size: 15px;
+    }
+
+    .third-article {
+        max-width: 702px;
+    }
+
+    .quotes {
+        font-size: 28px;
+        padding: 20px 0 0 25px;
+    }
+
+    .third-article-text {
+        font-size: 12px;
+        max-width: 632px;
+        margin: 0 auto 12px;
+    }
+
+    .bottom-quotes {
+        padding: 0 30px 5px 0;
+    }
+
+    .for-who-content {
+        gap: 4%;
+        margin-top: 50px;
+    }
+
+    .element-img {
+        width: 290px;
+    }
+    
+
+    .element-text {
+        width: 290px;
+        font-size: 18px;
+    }
+
+    .left {
+        width: 160px;
+        left: 20.5%;
+        bottom: -18%;
+    }
+
+    .middle {
+        height: 120px;
+    }
+
+    .buy-course-btn {
+        font-size: 20px;
+        width: 28%;
+        height: 60px;
+        margin: 115px auto 0;
+    }
+
+    .right {
+        width: 160px;
+        right: 20.5%;
+        bottom: -12%;
+    }
+
+    .faq {
+        margin-bottom: 70px;
+    }
+
+    .faq-questions {
+        gap: 40px;
+    }
+
+    .question-title {
+        font-size: 16px;
+        padding: 22px 37px;
+    }
+
+    .question-title:after {
+        width: 26px;
+        height: 26px;
+    }
+
+    .activated {
+        padding-top: 34px;
+    }
+
+    .activated::after {
+        top: 31.5px;
+        right: 38px;
+    }
+
+    .answer {
+        margin-top: -12px;
+        font-size: 14px;
+        max-width: 930px;
+    }
+
+    .footer {
+        height: 165px;
+    }
+
+    .footer-logo {
+        max-width: 236px;
+    }
+
+    .logo {
+        width: 44px;
+        height: 44px;
+    }
+
+    .school-name {
+        font-size: 15px;
+        width: 190px;
+    }
+
+    .school-name-span {
+        font-size: 15px;
+    }
+
+    .social-media {
+        gap: 16px;
+        margin-right: 104px;
+        height: 38px;
+    }
+
+    .media-img {
+        height: 18px;
+        width: 18px;
+    }
+
+    .footer-text {
+        margin: 0 auto;
+        max-width: 943px;
+    }
+
+    .footer-nav-link {
+        font-size: 11px;
+    }
+
+    .footer-nav-link:not(:last-of-type) {
+        margin-right: 26px;
+    }
+
+    .phone-number {
+        font-size: 11px;
+        width: 108px;
+        margin-right: 0;
     }
 }
