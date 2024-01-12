@@ -13,3 +13,29 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  var menuToggle = document.querySelector('.header-content input');
+  var overlay = document.querySelector('.overlay');
+
+  menuToggle.addEventListener('change', function() {
+      if (this.checked) {
+          document.body.style.overflow = 'hidden'; 
+          overlay.style.display = 'block';
+      } else {
+          document.body.style.overflow = '';
+          overlay.style.display = 'none';
+      }
+  });
+
+  overlay.addEventListener('click', function() {
+      menuToggle.checked = false;
+      document.body.style.overflow = '';
+      overlay.style.display = 'none';
+  });
+});
+
+if (window.innerWidth <= 960) {
+  document.getElementById('last-article-text').start = 3;
+  document.getElementById('third-article-text').start = 4;
+}

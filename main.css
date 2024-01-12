@@ -206,27 +206,19 @@ h1, h2 {
     display: none;
 }
 
-.header-content input:checked ~ .hamburger {
-    background: transparent;
-}
-
-.header-content input:checked ~ .hamburger::before {
+.overlay {
+    position: fixed;
     top: 0;
-    transform: rotate(-45deg);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* наприклад, напівпрозорий чорний фон */
+    display: none;
+    z-index: 1;
 }
 
-.header-content input:checked ~ .hamburger::after {
-    top: 0;
-    transform: rotate(45deg);
-}
-
-.header-content input:checked ~ .navigation-wrap {
-    right: 0;
-    box-shadow: -20px 0 40px rgba(0, 0, 0, 0.3);
-}
-
-.header-content input:checked ~ body {
-    background-color: rgba(128,128,128, 0.3);
+.overlay.open {
+    display: block;
 }
 
 /* Intro */
@@ -2225,7 +2217,7 @@ h1, h2 {
     }
 
     .header-wrap {
-        padding: 0 32px;
+        padding: 0;
     }
     
     .hamburger,
@@ -2241,13 +2233,12 @@ h1, h2 {
     .navigation-wrap {
         display: flex;
         flex-direction: column;
-        align-items: center;
         width: 300px;
         height: 100%;
         position: fixed;
         right: -300px;
         top: 0;
-        gap: 20px;
+        gap: 12px;
         padding-top: 72px;
         background: #ffffff;
         transition: 0.3s;
@@ -2257,14 +2248,53 @@ h1, h2 {
     .navigation {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 20px;
+        margin-left: 22px;
+        width: 85%;
+    }
+
+    .nav-link {
+        font-size: 13px;
+        padding: 10px 8px;
+    }
+
+    .nav-link:not(:first-of-type) {
+        border-top: 1px solid #657085cd;
+    }
+
+    .btn {
+        font-size: 13px;
+        margin: 0 auto;
+        width: 255px;
+        height: 42px;
     }
 
     .nav-link:not(:last-of-type) {
         margin-right: 0;
     }
+
+    .header-content input:checked ~ .hamburger {
+        background: transparent;
+    }
+    
+    .header-content input:checked ~ .hamburger::before {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    
+    .header-content input:checked ~ .hamburger::after {
+        top: 0;
+        transform: rotate(45deg);
+    }
+    
+    .header-content input:checked ~ .navigation-wrap {
+        right: 0;
+        box-shadow: -20px 0 40px rgba(0, 0, 0, 0.3);
+    }
+    
+    .header-content input:checked ~ body {
+        background-color: rgba(128,128,128, 0.3);
+    }
+
 
     .intro-text {
         font-size: 11px;
@@ -2332,10 +2362,14 @@ h1, h2 {
         font-size: 14px;
     }
 
+    .for-user {
+        height: 825px;
+        position: relative;
+    }
+
     .for-user-wrap {
         margin-top: 40px;
-        gap: 28px;
-        margin-bottom: 50px;
+        gap: 32px;
     }
 
     .for-user-title {
@@ -2343,31 +2377,34 @@ h1, h2 {
         margin-top: 32px;
     }
 
-    .for-user-wrap {
-        gap: 24px;
+    .about-lectors {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 16px;
     }
 
     .eng-lvl-title {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .vertical-line {
         height: 11px;
-        left: 132px;
+        left: 145px;
         border-left: 3px solid #0066A9;
     }
 
     .horizontal-line {
-        max-width: 172px;
+        max-width: 189px;
         border-top: 3px solid #0066A9;
     }
 
     .degrees {
-        margin-top: -8px;
+        gap: 24px;
+        margin-top: -7px;
     }
 
     .degree {
-        font-size: 9px;
+        font-size: 10px;
     }
 
     .left-side {
@@ -2391,15 +2428,38 @@ h1, h2 {
     }
 
     .last-article {
-        width: 196px;
-        height: 90px;
+        width: 650px;
+        border-radius: 0;
+        height: 110px;
+        position: absolute;
+        left: 50%;
+        bottom: 25.3%;
+        transform: translateX(-50%);
+        background: none;
+    }
+
+    .last-article:before {
+        display: none;
     }
 
     .last-article-text {
-        width: 158px;
-        font-size: 10px;
-        padding-left: 23px;
-        padding-top: 12px;
+        width: 550px;
+        font-size: 13px;
+        padding-left: 48px;
+        padding-top: 37px;
+        margin: 0;
+    }
+
+    .last-article-bg {
+        width: 650px;
+        height: 110px;
+        background: #F4EBDD;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        z-index: -1;
+        clip-path: polygon(0 0, 0% 100%, 100% 100%);
     }
 
     .articles {
@@ -2409,27 +2469,33 @@ h1, h2 {
 
     .right-side {
         gap: 32px;
+        flex-direction: column;
+        margin-top: 70px;
     }
 
     .first-article-block {
-        max-width: 273px;
+        max-width: 369px;
         height: 113px;
     }
 
     .first-article {
         padding-left: 10px;
         padding-top: 10px;
-        max-width: 238px;
-        line-height: 31px;
-        font-size: 10px;
+        max-width: 310px;
+        line-height: 30px;
+        font-size: 13px;
+        font-weight: 400;
     }
 
     .second-article {
         height: 113px;
-        max-width: 347px;
+        max-width: 369px;
         padding-top: 0;
-        font-size: 10px;
+        font-size: 13px;
+        font-weight: 400;
         line-height: 32px;
+        position: relative;
+        right: 7px;
     }
 
     .second-article-text {
@@ -2437,11 +2503,21 @@ h1, h2 {
     }
 
     .teaching-years {
+        position: absolute;
+        left: 50%;
+        bottom: 41%;
+        transform: translateX(-50%);
         font-size: 13px;
     }
 
     .third-article {
-        max-width: 649px;
+        max-width: 650px;
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #F4EBDD;
+        border-radius: 0;
     }
 
     .quotes {
@@ -2450,8 +2526,8 @@ h1, h2 {
     }
 
     .third-article-text {
-        font-size: 10px;
-        max-width: 520px;
+        font-size: 13px;
+        max-width: 567px;
         margin: -11px auto 0px;
         line-height: 31px;
     }
@@ -2581,10 +2657,15 @@ h1, h2 {
 
     .footer-nav-link {
         font-size: 9px;
+        padding: 0;
     }
 
     .footer-nav-link:not(:last-of-type) {
         margin-right: 18px;
+    }
+
+    .footer-nav-link:not(:first-of-type) {
+        border: none;
     }
 
     .phone-number {
