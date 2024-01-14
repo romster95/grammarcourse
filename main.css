@@ -601,6 +601,7 @@ h1, h2 {
     line-height: 14px; 
     letter-spacing: 1.4px;
     text-transform: uppercase;
+    text-decoration: none;
     padding: 44px 49px;
     width: 100%;
     max-width: 1464px;
