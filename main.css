@@ -2455,7 +2455,7 @@ h1, h2 {
     .last-article-bg {
         width: 650px;
         height: 110px;
-        background: #F4EBDD;
+        background: #DCF2FF;
         position: absolute;
         left: 50%;
         bottom: 0;
@@ -2518,7 +2518,7 @@ h1, h2 {
         bottom: 5%;
         left: 50%;
         transform: translateX(-50%);
-        background: #F4EBDD;
+        background: #DCF2FF;
         border-radius: 0;
     }
 
@@ -2639,11 +2639,6 @@ h1, h2 {
         margin-right: 82px;
         height: 36px;
         margin-top: -6px;
-    }
-
-    .media-img {
-        height: 16px;
-        width: 16px;
     }
 
     .footer-text {
@@ -3016,5 +3011,340 @@ h1, h2 {
 }
 
 @media (max-width: 680px) {
+    .container {
+        max-width: 650px;
+    }
 
+    .logo {
+        width: 32px;
+        height: 32px;
+    }
+
+    .hamburger::before {
+        top: -7px;
+    }
+
+    .hamburger::after {
+        top: 7px;
+    }
+
+    .intro-text {
+        font-size: 9px;
+    }
+
+    .intro-text-span {
+        font-size: 22px;
+    }
+
+    .intro-btn {
+        font-size: 10px;
+        height: 34px;
+        width: 190px;
+        margin: 15px auto 0;
+    }
+
+    .about-us {
+        padding-top: 24px;
+        padding-bottom: 32px;
+    }
+
+    .about-us-title {
+        font-size: 25px;
+    }
+
+    .features {
+        gap: 3.5%;
+        margin: 20px auto 24px
+    }
+
+    .feature {
+        width: 241px;
+        font-size: 12px;
+        line-height: 21px;
+    }
+
+    .circle {
+        width: 48px;
+        height: 48px;
+        right: -24px;
+        top: -24px;
+    }
+
+    .about-education {
+        max-width: 575px;
+        height: 150px;
+    }
+
+    .about-education-title {
+        font-size: 18px;
+    }
+
+    .about-education-text {
+        width: 520px;
+        font-size: 12px;
+    }
+
+    .for-user {
+        height: 720px;
+    }
+
+    .for-user-title {
+        font-size: 27px;
+        margin-top: 24px;
+    }
+
+    .for-user-wrap {
+        margin-top: 32px;
+        gap: 20px;
+    }
+
+    .about-lectors {
+        gap: 10px;
+    }
+
+    .eng-lvl-title {
+        font-size: 11px;
+    }
+
+    .horizontal-line {
+        max-width: 168px;
+    }
+
+    .vertical-line {
+        left: 128px;
+    }
+
+    .degrees {
+        gap: 21px;
+        margin-top: -6px;
+    }
+
+    .degree {
+        font-size: 9px;
+    }
+
+    .left-side {
+        gap: 12px;
+    }
+
+    .left-images {
+        gap: 16px;
+    }
+
+    .left-img {
+        width: 103px;
+        height: 111px;
+    }
+
+    .right-img {
+        height: 148px;
+        width: 118px;
+    }
+
+    .first-article-block {
+        max-width: 328px;
+        height: 102px;
+    }
+
+    .first-article {
+        padding-left: 6px;
+        padding-top: 8px;
+        max-width: 280px;
+        line-height: 28px;
+        font-size: 12px;
+    }
+
+    .second-article {
+        height: 96px;
+        max-width: 328px;
+        font-size: 12px;
+        line-height: 28px;
+    }
+
+    .teaching-years {
+        font-size: 13px;
+        bottom: 38.5%;
+    }
+
+    .last-article {
+        width: 100%;
+        height: 90px;
+        bottom: 21.2%;
+    }
+
+    .last-article-text {
+        width: 480px;
+        font-size: 12px;
+        line-height: 28px;
+        padding: 17px 0;
+        margin: 0 auto;
+    }
+
+    .last-article-bg {
+        width: 100%;
+        height: 90px;
+    }
+
+    .third-article {
+        max-width: 100%;
+        bottom: 0;
+    }
+
+    .third-article-text {
+        font-size: 12px;
+        max-width: 492px;
+        margin: -13px auto 0px;
+        line-height: 28px;
+    }
+
+    .quotes {
+        font-size: 21px;
+        padding: 10px 0 0 22px;
+    }
+
+    .bottom-quotes {
+        padding: 0 27px 0;
+    }
+
+    .for-who-content {
+        margin-top: 28px;
+    }
+
+    .element-img {
+        width: 180px;
+    }
+
+    .element-text {
+        width: 180px;
+        font-size: 12px;
+        margin-top: 0;
+    }
+
+    .left {
+        width: 95px;
+        left: 21%;
+        bottom: -12%;
+    }
+
+    .middle {
+        height: 60px;
+        right: 45.5%;
+    }
+
+    .buy-course-btn {
+        font-size: 13px;
+        height: 42px;
+        margin: 60px auto 0;
+    }
+
+    .right {
+        width: 95px;
+        bottom: -5%;
+        right: 21%;
+    }
+
+    .faq {
+        margin-bottom: 48px;
+    }
+
+    .faq-questions {
+        margin: 20px auto 0;
+    }
+
+    .question-title {
+        letter-spacing: 0.4px;
+    }
+
+    .footer {
+        height: 115px;
+    }
+
+    .footer-logo {
+        padding-top: 12px;
+        max-width: 190px;
+    }
+
+    .foot-logo {
+        width: 36px;
+        height: 36px;
+    }
+
+    .school-name {
+        font-size: 12px;
+        width: 152px;
+    }
+
+    .school-name-span {
+        font-size: 12px;
+    }
+
+    .social-media {
+        gap: 14px;
+        margin-top: -12px;
+        margin-right: 58px;
+    }
+
+    .media-img {
+        height: 15px;
+        width: 15px;
+    }
+
+    .footer-text {
+        max-width: 538px;
+    }
+
+    .footer-nav-link:not(:last-of-type) {
+        margin-right: 14px;
+    }
+}
+
+@media (max-width: 630px) {
+    .container {
+        max-width: 600px;
+    }
+
+    .intro-text-span {
+        font-size: 21px;
+    }
+
+    .intro-btn {
+        font-size: 9px;
+        height: 32px;
+        width: 168px;
+        margin: 12px auto 0;
+    }
+
+    .features {
+        gap: 3%;
+    }
+
+    .about-education {
+        max-width: 530px;
+        height: 158px;
+    }
+
+    .circle {
+        width: 40px;
+        height: 40px;
+        right: -20px;
+        top: -20px;
+        border: 3px solid #E5F4F1;
+    }
+
+    .education-content {
+        padding-top: 16px;
+        margin-left: 24px;
+    }
+
+    .about-education-text {
+        width: 480px;
+    }
+
+    .left {
+        left: 19%;
+    }
+
+    .right {
+        right: 19%;
+    }
 }
