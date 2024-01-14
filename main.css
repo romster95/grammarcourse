@@ -597,11 +597,12 @@ h1, h2 {
     font-family: 'Artegra-sans';
     font-weight: 500;
     background-color: #DCF2FF;
+    color: #000;
+    text-decoration: none;
     font-size: 27px;
     line-height: 14px; 
     letter-spacing: 1.4px;
     text-transform: uppercase;
-    text-decoration: none;
     padding: 44px 49px;
     width: 100%;
     max-width: 1464px;
