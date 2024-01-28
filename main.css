@@ -610,7 +610,7 @@ h1, h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent; /* Вимкнення виділення при торканні в Safari */
     cursor: pointer;
 }
 
