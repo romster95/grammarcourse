@@ -2986,7 +2986,16 @@ h1, h2 {
     }
 
     .footer {
-        height: 125px;
+        height: 100px;
+        position: relative;
+    }
+
+    .footer-logo {
+        padding: 0;
+        margin-left: 40px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     .foot-logo {
@@ -2994,17 +3003,24 @@ h1, h2 {
         height: 38px;
     }
 
+    .social-media {
+        position: absolute;
+        right: 0;
+        top: 53%;
+        transform: translateY(-50%);
+    }
+
+    .media-img {
+        height: 19px;
+        width: 19px;
+    }
+
+    .footer-line {
+        display: none;
+    }
+
     .footer-text {
-        max-width: 590px;
-        margin-top: -3px;
-    }
-
-    .footer-nav-link {
-        font-size: 9px;
-    }
-
-    .phone-number {
-        margin-right: -9px;
+        display: none;
     }
 }
 
@@ -3254,45 +3270,17 @@ h1, h2 {
     }
 
     .footer {
-        height: 115px;
-    }
-
-    .footer-logo {
-        padding-top: 12px;
-        max-width: 190px;
+        height: 88px;
     }
 
     .foot-logo {
-        width: 36px;
-        height: 36px;
-    }
-
-    .school-name {
-        font-size: 12px;
-        width: 152px;
-    }
-
-    .school-name-span {
-        font-size: 12px;
-    }
-
-    .social-media {
-        gap: 14px;
-        margin-top: -12px;
-        margin-right: 58px;
+        width: 38px;
+        height: 38px;
     }
 
     .media-img {
-        height: 15px;
-        width: 15px;
-    }
-
-    .footer-text {
-        max-width: 538px;
-    }
-
-    .footer-nav-link:not(:last-of-type) {
-        margin-right: 14px;
+        width: 18px;
+        height: 18px;
     }
 }
 
@@ -3338,24 +3326,19 @@ h1, h2 {
     .question-title {
         font-size: 10px;
     }
-
-    .footer-text {
-        width: 82.5%;
-    }
-
-    .footer-nav-link {
-        font-size: 8px;
-    }
-
-    .phone-number {
-        font-size: 8px;
-        margin-right: -19px;
-    }
 }
 
 @media (max-width: 585px) {
     .container {
         max-width: 555px;
+    }
+
+    .about-us-title {
+        margin-left: 24px;
+    }
+
+    .for-user-title {
+        margin-left: 24px;
     }
 
     .features {
@@ -3433,5 +3416,141 @@ h1, h2 {
 
     .bottom-quotes {
         padding: 0px 40px 0;
+    }
+
+    .for-who-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .for-who-element {
+        display: flex;
+        gap: 48px;
+        align-items: center;
+    }
+
+    .for-who-element:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+
+    .element-text {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .left {
+        left: 11%;
+    }
+
+    .right {
+        right: 11%;
+    }
+
+    .middle {
+        display: none;
+    }
+
+    .buy-course-btn {
+        font-size: 14px;
+        height: 48px;
+        width: 40%;
+    }
+
+    .faq-questions {
+        width: 92%;
+    }
+
+    .question-title:after {
+        width: 16px;
+        height: 16px;
+    }
+
+    .activated::after {
+        right: 18px;
+    }
+
+    .footer {
+        height: 76px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        max-width: 470px;
+    }   
+
+    .features {
+        gap: 2%;
+    }
+
+    .about-education {
+        max-width: 410px;
+        height: 192px;
+    }
+
+    .circle {
+        width: 38px;
+        height: 38px;
+        right: -19px;
+        top: -19px;
+        border: 2px solid #E5F4F1;
+    }
+
+    .about-education-text {
+        width: 350px;
+    }
+    
+    .for-user-wrap {
+        gap: 16px;
+    }
+
+    .articles {
+        width: 210px;
+    }
+
+    .second-article {
+        width: 225px;
+        right: 25px;
+    }
+
+    .last-article-text {
+        width: 395px;
+    }
+
+    .third-article-text {
+        max-width: 395px;
+    }
+
+    .quotes {
+        padding: 10px 0 0 32px;
+    }
+
+    .bottom-quotes {
+        padding: 0 40px 0;
+    }
+
+    .for-who-element {
+        gap: 40px;
+    }
+    
+    .left {
+        width: 90px;
+        left: 9%;
+        bottom: -4%;
+    }
+
+    .right {
+        width: 90px;
+        bottom: 3%;
+        right: 9%;
+    }
+
+    .faq-questions {
+        width: 95%;
+    }
+
+    .question-title {
+        font-size: 9px;
     }
 }
