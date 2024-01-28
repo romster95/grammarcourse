@@ -611,6 +611,7 @@ h1, h2 {
     align-items: center;
     justify-content: space-between;
     -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
 }
 
 .activated {
