@@ -771,6 +771,7 @@ h1, h2 {
     }
 
     .question-title:hover {
+        text-decoration: none;
         background-color: #018961;
         color: #FFF;
     }
