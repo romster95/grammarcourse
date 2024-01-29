@@ -4039,5 +4039,30 @@ h1, h2 {
     }
 }
 
+@media (max-width: 360px) {
+    .container {
+        max-width: 335px;
+    }
+    
+    .quotes {
+        padding: 10px 0 0 15px;
+    }
+    
+    .bottom-quotes {
+        padding: 0 12px 0;
+    }
+}
 
-
+@media (max-width: 340px) {
+    .container {
+        max-width: 335px;
+    }
+    
+    .quotes {
+        padding: 10px 0 0 6px;
+    }
+    
+    .bottom-quotes {
+        padding: 0 12px 0;
+    }
+}
