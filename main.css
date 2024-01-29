@@ -610,6 +610,7 @@ h1, h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .activated {
@@ -3781,12 +3782,12 @@ h1, h2 {
     }
 
     .activated {
-        padding: 25px 18px;
+        padding: 25px 14px;
     }
 
     .answer {
         font-size: 9px;
-        margin-top: -20px;
+        margin-top: -16px;
     }
 
     .answer-list {
@@ -3830,5 +3831,213 @@ h1, h2 {
     .container {
         max-width: 370px;
     }
+
+    .header-wrap {
+        padding: 3%;
+        height: 30px;
+    }
+
+    .logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header-content {
+        height: 30px;
+    }
+
+    .intro-text {
+        font-size: 9px;
+    }
+
+    .intro-text-span {
+        font-size: 20px;
+    }
+
+    .intro-btn {
+        font-size: 9px;
+        height: 34px;
+        width: 175px;
+    }
+
+    .about-education {
+        max-width: 345px;
+        height: 195px;
+    }
+
+    .about-education-text {
+        width: 315px;
+    }
+
+    .for-user {
+        height: 680px;
+    }
+
+    .left-img {
+        width: 75px;
+        height: 80px;
+    }
+
+    .right-img {
+        height: 95px;
+        width: 75px;
+    }
+
+    .eng-lvl-title {
+        font-size: 9px;
+    }
+
+    .horizontal-line {
+        max-width: 120px;
+    }
+
+    .vertical-line {
+        height: 10px;
+        left: 90px;
+        bottom: 3px;
+    }
+
+    .degrees {
+        gap: 14px;
+    }
+
+    .degree {
+        font-size: 7px;
+    }
+
+    .right-side {
+        gap: 12px;
+        margin-top: 52px;
+    }
+
+    .articles {
+        width: 142px;
+    }
+
+    .first-article-block {
+        max-width: 141px;
+        height: 144px;
+    }
+
+    .first-article {
+        max-width: 115px;
+        font-size: 9px;
+    }
+
+    .second-article {
+        width: 168px;
+        right: 28px;
+        bottom: 6px;
+        font-size: 9px;
+        line-height: 25px;
+    }
+
+    .teaching-years {
+        font-size: 11px;
+        bottom: 41.3%;
+    }
+
+    .last-article {
+        bottom: 26.6%;
+    }
+
+    .last-article-text, .third-article-text {
+        width: 312px;
+        font-size: 10px;
+    }
+
+    .for-who-content {
+        gap: 12px;
+    }
+
+    .for-who-element {
+        gap: 24px;
+    }
+
+    .element-img {
+        width: 145px;
+    }
+
+    .element-text {
+        font-size: 11px;
+        width: 135px;
+    }
+
+    .left {
+        width: 65px;
+        left: 11%;
+        bottom: 8%;
+    }
+
+    .right {
+        width: 65px;
+        bottom: 8%;
+        right: 11%;
+    }
+
+    .buy-course-btn {
+        font-size: 11px;
+        height: 40px;
+        margin: 44px auto 0;
+    }
+
+    .question-title {
+        font-size: 7px;
+        padding: 14px 12px;
+        letter-spacing: 0.3px;
+    }
+
+    .question-title:after {
+        width: 11px;
+        height: 11px;
+    }
+
+    .activated {
+        padding: 25px 12px;
+    }
+
+    .activated::after {
+        right: 12px;
+    }
+
+    .answer {
+        font-size: 8px;
+        margin-top: -18px;
+        line-height: 16px;
+    }
+
+    .answer-text {
+        padding-left: 12px;
+    }
+
+    .answer-list {
+        padding-left: 35px;
+    }
+
+    .foot-logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .school-name {
+        font-size: 11px;
+        width: 138px;
+    }
+    
+    .school-name-span {
+        font-size: 11px;
+    }
+
+    .social-media {
+        gap: 12px;
+        margin-right: 16px;
+    }
+
+    .media-img {
+        width: 14px;
+        height: 14px;
+    }
 }
+
+
 
