@@ -4065,4 +4065,8 @@ h1, h2 {
     .bottom-quotes {
         padding: 0 12px 0;
     }
+
+    .question-title {
+        font-size: 6.5px;
+    }
 }

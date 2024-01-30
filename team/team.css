@@ -76,7 +76,6 @@ h1 {
 .container {
     width: 100%;
     max-width: 1760px;
-    height: 100%;
     margin: 0 auto;
 }
 
@@ -122,11 +121,6 @@ h1 {
     transition: font-weight 0.2s, color 0.2s;
 }
 
-.nav-link:hover {
-    transition: 0.2s;
-    font-weight: 600; 
-    color: #0066A9;
-}
 
 .nav-link:not(:last-of-type) {
     margin-right: 90px;
@@ -151,12 +145,6 @@ h1 {
     text-decoration: none;
     color: #000;
     transition: background 0.3s, color 0.3s;
-}
-
-.btn:hover {
-    background: #0066A9;
-    color: #DCF2FF; 
-    transition: 0.3s;
 }
 
 /* Hamburger menu */
@@ -228,12 +216,16 @@ h1 {
 .founder {
     width: 100%;
     height: 1075px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .founder-content {
-    padding: 138px 0 0 148px;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
     gap: 32px;
 }
 
@@ -276,14 +268,16 @@ h1 {
 }
 
 .founder-photo {
-    height: 724px;
+    max-height: 724px;
+    max-width: 100%;
 }
 
 
 /* Team */
 
 .team-content {
-    padding: 15px 0 0 148px; 
+    max-width: 1555px;
+    margin: 0 auto;
 }
 
 .team-title {
@@ -294,7 +288,7 @@ h1 {
 .teachers {
     display: flex;
     flex-direction: row;
-    gap: 66px;
+    gap: 100px;
     padding-bottom: 44px;
 }
 
@@ -329,7 +323,6 @@ h1 {
 
 .experience-span {
     color: #0066A9;
-    font-size: 22px;
     font-weight: 600;
 }
 
@@ -403,7 +396,7 @@ h1 {
 }
 
 .footer-line {
-    width: 1481px;
+    width: 84%;
     height: 1.3px;
     background: #1C202B80;
     opacity: 0.5;
@@ -514,5 +507,414 @@ h1 {
     
     .header-content input:checked ~ body {
         background-color: rgba(128,128,128, 0.3);
+    }
+}
+
+@media (hover: hover) {
+    .nav-link:hover {
+        transition: 0.2s;
+        font-weight: 600; 
+        color: #0066A9;
+    }
+
+    .btn:hover {
+        background: #0066A9;
+        color: #DCF2FF; 
+        transition: 0.3s;
+    }
+}
+
+@media (max-width: 1720px) {
+    .container {
+        max-width: 1760px;
+    }
+
+    .founder {
+        height: 1000px;
+    }
+
+    .founder-content {
+        align-items: normal;
+    }
+
+    .position {
+        font-size: 24px;
+    }
+
+    .founder-title {
+        font-size: 48px;
+    }
+
+    .founder-title-span {
+        font-size: 60px;
+    }
+
+    .about-founder-text {
+        font-size: 30px;
+        width: 385px;
+    }
+
+    .founder-photo {
+        max-height: 690px;
+    }
+
+    .teachers {
+        justify-content: space-evenly;
+    }
+
+    .teacher-info {
+        width: 340px;
+    }
+
+    .teacher-name {
+        font-size: 22px;
+    }
+
+    .experience, .about-teacher {
+        font-size: 21px;
+    }
+
+    .sertificate {
+        width: 340px;
+    }
+
+    .sertificate-text {
+        width: 275px;
+        font-size: 21px;
+    }
+
+    .footer {
+        height: 200px;
+    }
+
+    .footer-logo {
+        padding-top: 20px;
+    }
+
+    .foot-logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .school-name {
+        font-size: 19px;
+        width: 230px;
+    }
+
+    .school-name-span {
+        font-size: 19px;
+    }
+
+    .social-media {
+        gap: 17px;
+        margin-right: 2%;
+    }
+
+    .footer-line {
+        width: 95.5%;
+        margin: 0px auto 4px;
+    }
+
+    .footer-navigation {
+        margin-left: 2.1%;
+    }
+
+    .footer-nav-link:not(:last-of-type) {
+        margin-right: 40px;
+    }
+
+    .phone-number {
+        margin-top: 18px;
+        margin-right: 1%;
+    }
+}
+
+@media (max-width: 1600px) {
+    .container {
+        max-width: 1326px;
+    }
+
+    .header {
+        height: 60px;
+    }
+
+    .logo {
+        width: 47px;
+        height: 47px;
+    }
+    
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+        width: 300px;
+        height: 47px;
+    }
+
+    .founder {
+        height: 690px;
+    }
+
+    .position {
+        font-size: 18px;
+    }
+
+    .founder-title {
+        font-size: 42px;
+        max-width: 580px;
+        margin-bottom: 24px;
+    }
+
+    .founder-title-span {
+        font-size: 50px;
+    }
+
+    .about-founder-text {
+        font-size: 24px;
+        width: 326px;
+    }
+
+    .founder-photo {
+        max-height: 620px;
+    }
+
+    .team-title {
+        max-width: 660px;    
+        margin-bottom: 60px;
+    }
+
+    .teachers {
+        padding-bottom: 24px;
+    }
+
+    .teacher-photo {
+        width: 280px;
+    }
+
+    .teacher-name {
+        font-size: 21px;
+    }
+
+    .experience, .about-teacher {
+        font-size: 20px;
+        margin: 20px 0 24px;
+    }
+
+    .teacher-info, .sertificate {
+        width: 305px;
+    }
+
+    .sertificate-text {
+        width: 230px;
+        font-size: 20px;
+    }
+
+    .footer {
+        height: 200px;
+    }
+
+    .footer-logo {
+        padding-top: 20px;
+    }
+
+    .foot-logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .school-name {
+        font-size: 19px;
+        width: 230px;
+    }
+
+    .school-name-span {
+        font-size: 19px;
+    }
+
+    .social-media {
+        gap: 17px;
+    }
+
+    .footer-line {
+        width: 80%;
+        margin: 0px auto 4px;
+    }
+
+    .footer-nav-link:not(:last-of-type) {
+        margin-right: 40px;
+    }
+
+    .phone-number {
+        margin-top: 18px;
+    }
+}
+
+@media (max-width: 1335px) {
+    .container {
+        max-width: 1235px;
+    }
+
+    .logo {
+        width: 43px;
+        height: 43px;
+    }
+
+    .nav-link {
+        font-size: 13px;
+    }
+
+    .nav-link:not(:last-of-type) {
+        margin-right: 70px;
+    }
+
+    .btn {
+        font-size: 13px;
+        width: 285px;
+    }
+
+    .founder {
+        height: 620px;
+    }
+
+    .position {
+        font-size: 16px;
+    }
+
+    .founder-title {
+        font-size: 40px;
+        max-width: 570px;
+    }
+
+    .founder-title-span {
+        font-size: 46px;
+    }
+
+    .about-founder-text {
+        font-size: 21px;
+        width: 280px;
+    }
+
+    .founder-photo {
+        max-height: 550px;
+    }
+
+    .team-content {
+        padding-left: 4%;
+    }
+    
+    .team-title {
+        max-width: 660px;
+    }
+
+    .teachers {
+        padding-bottom: 28px;
+        gap: 60px;
+        justify-content: normal;
+    }
+
+    .teacher-info, .sertificate {
+        width: 285px;
+    }
+
+    .teacher-photo {
+        width: 240px;
+    }
+
+    .teacher-name {
+        font-size: 20px;
+    }
+
+    .experience, .about-teacher {
+        font-size: 18px;
+        margin: 14px 0 20px;
+    }
+
+    .sertificate-text {
+        width: 208px;
+        font-size: 18px;
+    }
+
+    .footer {
+        height: 188px;
+    }
+
+    .footer-logo {
+        padding-top: 16px;
+    }
+
+    .foot-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .school-name {
+        font-size: 17px;
+        width: 215px;
+    }
+
+    .school-name-span {
+        font-size: 17px;
+    }
+
+    .footer-line {
+        width: 82.5%;
+    }
+
+    .social-media {
+        margin-right: 115px;
+    }
+
+    .media-img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .footer-navigation {
+        margin-left: 110px;
+    }
+
+    .footer-nav-link {
+        font-size: 12px;
+    }
+
+    .footer-nav-link:not(:last-of-type) {
+        margin-right: 32px;
+    }
+
+    .phone-number {
+        font-size: 12px;
+        width: 117px;
+        margin-right: 105px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1120px;
+    }
+    
+    .header {
+        height: 50px;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .navigation {
+        margin-top: -5px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .btn {
+        font-size: 12px;
+        width: 245px;
+        height: 38px;
     }
 }
