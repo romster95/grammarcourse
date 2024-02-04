@@ -225,7 +225,7 @@ h1 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center; /* Center content horizontally */
+    justify-content: center; 
     gap: 32px;
 }
 
@@ -260,7 +260,7 @@ h1 {
 }
 
 .about-founder-text {
-    width: 414px;
+    width: 450px;
 }
 
 .about-founder-text-span {
@@ -271,7 +271,6 @@ h1 {
     max-height: 724px;
     max-width: 100%;
 }
-
 
 /* Team */
 
@@ -317,7 +316,6 @@ h1 {
 
 .experience, .about-teacher {
     font-size: 22px;
-    font-weight: 500;
     margin: 28px 0 32px;
 }
 
@@ -425,91 +423,6 @@ h1 {
     margin-right: 118px;
 }
 
-@media (max-width: 960px) {
-    .container {
-        max-width: 900px;
-    }
-
-    .header-wrap {
-        padding: 0;
-    }
-    
-    .hamburger,
-    .toggle-menu {
-        display: block;
-    }
-
-    .header-content {
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    .navigation-wrap {
-        display: flex;
-        flex-direction: column;
-        width: 300px;
-        height: 100%;
-        position: fixed;
-        right: -300px;
-        top: 0;
-        gap: 12px;
-        padding-top: 72px;
-        background: #ffffff;
-        transition: 0.3s;
-        z-index: 2;
-    }
-
-    .navigation {
-        display: flex;
-        flex-direction: column;
-        margin-left: 22px;
-        width: 85%;
-    }
-
-    .nav-link {
-        font-size: 13px;
-        padding: 10px 8px;
-    }
-
-    .nav-link:not(:first-of-type) {
-        border-top: 1px solid #657085cd;
-    }
-
-    .btn {
-        font-size: 13px;
-        margin: 0 auto;
-        width: 255px;
-        height: 42px;
-    }
-
-    .nav-link:not(:last-of-type) {
-        margin-right: 0;
-    }
-
-    .header-content input:checked ~ .hamburger {
-        background: transparent;
-    }
-    
-    .header-content input:checked ~ .hamburger::before {
-        top: 0;
-        transform: rotate(-45deg);
-    }
-    
-    .header-content input:checked ~ .hamburger::after {
-        top: 0;
-        transform: rotate(45deg);
-    }
-    
-    .header-content input:checked ~ .navigation-wrap {
-        right: 0;
-        box-shadow: -20px 0 40px rgba(0, 0, 0, 0.3);
-    }
-    
-    .header-content input:checked ~ body {
-        background-color: rgba(128,128,128, 0.3);
-    }
-}
-
 @media (hover: hover) {
     .nav-link:hover {
         transition: 0.2s;
@@ -551,7 +464,7 @@ h1 {
 
     .about-founder-text {
         font-size: 30px;
-        width: 385px;
+        width: 405px;
     }
 
     .founder-photo {
@@ -916,5 +829,1161 @@ h1 {
         font-size: 12px;
         width: 245px;
         height: 38px;
+    }
+
+    .founder {
+        height: 550px;
+    }
+
+    .founder-content {
+        justify-content: space-evenly;
+    }
+
+    .position {
+        font-size: 14px;
+    }
+    
+    .founder-title-span {
+        font-size: 40px;
+    }
+
+    .founder-title {
+        font-size: 36px;
+        max-width: 500px;
+    }
+
+    .about-founder-block {
+        gap: 20px;
+    }
+
+    .about-founder-text {
+        font-size: 18px;
+        width: 250px;
+    }
+
+    .founder-photo {
+        max-height: 440px;
+    }
+
+    .team-title {
+        max-width: 660px;
+        margin-bottom: 40px;
+    }
+
+    .teachers {
+        padding-bottom: 12px;
+        gap: 32px;
+    }
+
+    .teacher-photo {
+        width: 220px;
+    }
+
+    .teacher-name {
+        font-size: 18px;
+    }
+
+    .experience, .about-teacher {
+        font-size: 16px;
+        margin: 12px 0 20px;
+    }
+
+    .teacher-info, .sertificate {
+        width: 245px;
+    }
+
+    .sertificate {
+        height: 88px;
+    }
+
+    .sertificate-text {
+        width: 186px;
+        font-size: 16px;
+    }
+
+    .footer {
+        height: 165px;
+    }
+
+    .logo {
+        width: 44px;
+        height: 44px;
+    }
+
+    .school-name {
+        font-size: 15px;
+        width: 190px;
+    }
+
+    .school-name-span {
+        font-size: 15px;
+    }
+
+    .social-media {
+        gap: 16px;
+        margin-right: 104px;
+        height: 38px;
+    }
+
+    .media-img {
+        height: 18px;
+        width: 18px;
+    }
+
+    .footer-line {
+        width: 91%;
+    }
+
+    .footer-navigation {
+        margin-left: 10px;
+    }
+
+    .footer-text {
+        margin: 0 auto;
+        max-width: 1040px;
+    }
+
+    .footer-nav-link {
+        font-size: 11px;
+    }
+
+    .footer-nav-link:not(:last-of-type) {
+        margin-right: 26px;
+    }
+
+    .phone-number {
+        font-size: 11px;
+        width: 108px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 1100px) {
+    .container {
+        max-width: 980px;
+    }
+
+    .header-wrap {
+        padding: 0px 12px;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-link:not(:last-of-type) {
+        margin-right: 62px;
+    }
+
+    .founder {
+        height: 520px;
+    }
+
+    .founder-content {
+        gap: 0;
+    }
+
+    .position {
+        font-size: 13px;
+        line-height: 10px;
+    }
+
+    .founder-title {
+        font-size: 34px;
+        max-width: 455px;
+        margin-bottom: 16px;
+    }
+
+    .founder-title-span {
+        font-size: 36px;
+    }
+
+    .about-founder-text {
+        font-size: 17px;
+    }
+
+    .founder-photo {
+        max-height: 400px;
+    }
+
+    .team-title {
+        max-width: 550px;
+    }
+
+    .team-content {
+        padding-left: 2.5%;
+    }
+
+    .teachers {
+        gap: 60px;
+    }
+
+    .teacher {
+        gap: 20px;
+    }
+
+    .teacher-photo {
+        width: 185px;
+    }
+
+    .teacher-name {
+        font-size: 16px;
+    }
+
+    .experience, .about-teacher {
+        font-size: 14px;
+        margin: 12px 0 16px;
+    }
+
+    .teacher-info, .sertificate {
+        width: 216px;
+    }
+
+    .sertificate {
+        height: 74px;
+    }
+
+    .sertificate-text {
+        width: 162px;
+        font-size: 14px;
+    }
+
+    .footer {
+        height: 150px;
+    }
+
+    .foot-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .school-name {
+        font-size: 15px;
+        width: 185px;
+    }
+
+    .social-media {
+        margin-right: 32px;
+    }
+
+    .footer-line {
+        width: 94%;
+    }
+
+    .footer-text {
+        margin: -4px auto 0;
+        max-width: 945px;
+    }
+}
+
+@media (max-width: 960px) {
+    .container {
+        max-width: 900px;
+    }
+
+    .header {
+        position: sticky;
+        top: 0;
+        z-index: 3;
+    }
+
+    .header-wrap {
+        padding: 0;
+    }
+    
+    .hamburger,
+    .toggle-menu {
+        display: block;
+    }
+
+    .header-content {
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .navigation-wrap {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 100%;
+        position: fixed;
+        right: -300px;
+        top: 0;
+        gap: 12px;
+        padding-top: 72px;
+        background: #ffffff;
+        transition: 0.3s;
+        z-index: 2;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        margin-left: 22px;
+        width: 85%;
+    }
+
+    .nav-link {
+        font-size: 13px;
+        padding: 10px 8px;
+    }
+
+    .nav-link:not(:first-of-type) {
+        border-top: 1px solid #657085cd;
+    }
+
+    .btn {
+        font-size: 13px;
+        margin: 0 auto;
+        width: 255px;
+        height: 42px;
+    }
+
+    .nav-link:not(:last-of-type) {
+        margin-right: 0;
+    }
+
+    .header-content input:checked ~ .hamburger {
+        background: transparent;
+    }
+    
+    .header-content input:checked ~ .hamburger::before {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    
+    .header-content input:checked ~ .hamburger::after {
+        top: 0;
+        transform: rotate(45deg);
+    }
+    
+    .header-content input:checked ~ .navigation-wrap {
+        right: 0;
+        box-shadow: -20px 0 40px rgba(0, 0, 0, 0.3);
+    }
+    
+    .header-content input:checked ~ body {
+        background-color: rgba(128,128,128, 0.3);
+    }
+
+    .founder {
+        height: 455px;
+    }
+
+    .position {
+        font-size: 12px;
+        line-height: 4px;
+    }
+    
+    .founder-title {
+        font-size: 32px;
+        max-width: 400px;
+    }
+    
+    .founder-title-span {
+        font-size: 32px;
+    }
+
+    .about-founder-text {
+        font-size: 15px;
+        width: 208px;
+    }
+
+    .founder-photo {
+        max-height: 350px;
+    }
+
+    .team-content {
+        padding-left: 4.5%;
+    }
+
+    .team-title {
+        max-width: 510px;
+    }
+
+    .teachers {
+        gap: 40px;
+    }
+
+    .teacher-photo {
+        width: 160px;
+    }
+
+    .teacher-name {
+        font-size: 14px;
+    }
+
+    .experience, .about-teacher {
+        font-size: 13px;
+        margin: 8px 0 8px;
+    }
+
+    .sertificate-text {
+        width: 150px;
+        font-size: 13px;
+    }
+
+    .teacher-info, .sertificate {
+        width: 200px;
+    }
+
+    .sertificate {
+        height: 68px;
+    }
+
+    .footer {
+        height: 132px;
+        margin-top: 44px;
+    }
+
+    .footer-logo {
+        padding-top: 13px;
+        gap: 12px;
+    }
+
+    .foot-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .school-name {
+        font-size: 14px;
+        width: 156px;
+    }
+
+    .school-name-span {
+        font-size: 14px;
+    }
+
+    .social-media {
+        gap: 16px;
+        margin-right: 45px;
+        height: 36px;
+        margin-top: -6px;
+    }
+
+    .footer-line {
+        width: 90%;
+    }
+
+    .footer-text {
+        margin: 0 auto;
+        max-width: 812px;
+    }
+
+    .footer-navigation {
+        margin-left: 0;
+        margin-top: -12px;
+        display: block;
+    }
+
+    .footer-nav-link {
+        font-size: 9px;
+        padding: 0;
+    }
+
+    .footer-nav-link:not(:last-of-type) {
+        margin-right: 18px;
+    }
+
+    .footer-nav-link:not(:first-of-type) {
+        border: none;
+    }
+
+    .phone-number {
+        font-size: 9px;
+        width: 90px;
+        margin-right: -8px;
+        margin-top: 9px;
+    }
+}
+
+@media (max-width: 820px) {
+    .container {
+        max-width: 780px;
+    }
+
+    .founder {
+        height: 400px;
+    }
+
+    .position {
+        font-size: 11px;
+    }
+
+    .founder-title {
+        font-size: 28px;
+        max-width: 300px;
+    }
+
+    .founder-title-span {
+        font-size: 28px;
+    }
+
+    .about-founder-text {
+        font-size: 13px;
+        width: 175px;
+    }
+
+    .founder-photo {
+        max-height: 320px;
+    }
+
+    .team-title {
+        max-width: 450px;
+    }
+
+    .teachers {
+        gap: 28px;
+    }
+
+    .teacher {
+        gap: 16px;
+    }
+
+    .teacher-photo {
+        width: 140px;
+    }
+
+    .teacher-name {
+        font-size: 12px;
+    }
+
+    .sertificate {
+        height: 62px;
+    }
+
+    .sertificate-text {
+        width: 138px;
+        font-size: 12px;
+    }
+
+    .teacher-info, .sertificate {
+        width: 182px;
+    }
+
+    .experience, .about-teacher {
+        font-size: 12px;
+        margin: 6px 0 6px;
+    }
+
+    .footer {
+        height: 130px;
+        margin-top: 32px;
+    }
+
+    .foot-logo {
+        width: 38px;
+        height: 38px;
+    }
+
+    .school-name {
+        font-size: 13px;
+        width: 160px;
+    }
+
+    .school-name-span {
+        font-size: 13px;
+    }
+
+    .social-media {
+        margin-right: 68px;
+    }
+
+    .footer-text {
+        max-width: 705px;
+    }
+}
+
+@media (max-width: 755px) {
+    .container {
+        max-width: 715px;
+    }
+
+    .header {
+        height: 42px;
+    }
+
+    .logo {
+        width: 34px;
+        height: 34px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .btn {
+        font-size: 12px;
+    }
+
+    .position {
+        font-size: 10px;
+    }
+
+    .founder-title {
+        font-size: 26px;
+        max-width: 270px;
+    }
+
+    .founder-title-span {
+        font-size: 26px;
+    }
+
+    .about-founder-block {
+        gap: 4px;
+    }
+
+    .about-founder-text {
+        font-size: 12px;
+        width: 155px;
+    }
+
+    .founder-photo {
+        max-height: 300px;
+    }
+
+    .teachers {
+        gap: 16px;
+    }
+
+    .teacher-photo {
+        width: 135px;
+    }
+
+    .teacher-name {
+        font-size: 11px;
+    }
+
+    .experience, .about-teacher {
+        font-size: 11px;
+        margin: 6px 0 6px;
+    }
+
+    .teacher-info, .sertificate {
+        width: 160px;
+    }
+
+    .team-title {
+        max-width: 430px;
+    }
+    
+    .sertificate {
+        height: 60px;
+    }
+
+    .sertificate-text {
+        width: 126px;
+        font-size: 11px;
+    }
+
+    .footer {
+        height: 100px;
+        position: relative;
+    }
+
+    .footer-logo {
+        padding: 0;
+        margin-left: 40px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .foot-logo {
+        width: 38px;
+        height: 38px;
+    }
+
+    .social-media {
+        position: absolute;
+        right: 0;
+        top: 53%;
+        transform: translateY(-50%);
+    }
+
+    .media-img {
+        height: 19px;
+        width: 19px;
+    }
+
+    .footer-line {
+        display: none;
+    }
+
+    .footer-text {
+        display: none;
+    }
+}
+
+@media (max-width: 680px) {
+    .container {
+        max-width: 650px;
+    }
+
+    .logo {
+        width: 32px;
+        height: 32px;
+    }
+
+    .hamburger::before {
+        top: -7px;
+    }
+
+    .hamburger::after {
+        top: 7px;
+    }
+
+    .founder {
+        height: 530px;
+        position: relative;
+    }
+
+    .founder-content {
+        padding-left: 4%;
+        justify-content: start;
+    }
+
+    .founder-title {
+        max-width: 480px;
+    }
+
+    .about-founder {
+        gap: 16px;
+    }
+
+    .about-founder-block {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .about-founder-text {
+        font-size: 14px;
+        width: 195px;
+    }
+
+    .long-text {
+        width: 450px;
+    }
+
+    .br-none {
+        display: none;
+    }
+
+    .founder-photo {
+        position: absolute;
+        top: 58%;
+        right: 9%;
+        transform: translateY(-50%);
+    }
+
+    .team-content {
+        padding: 0;
+    }
+
+    .team-content .position {
+        padding-left: 4%;
+    }
+
+    .team-title {
+        padding-left: 4%;
+        margin-bottom: 32px;
+    }
+
+    .teacher {
+        justify-content: space-evenly;
+    }
+
+    .teachers {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .teacher-photo {
+        width: 175px;
+    }
+    
+    .teacher-name {
+        font-size: 16px;
+    }
+
+    .experience, .about-teacher {
+        font-size: 14px;
+    }
+
+    .teacher-info, .sertificate {
+        width: 235px;
+    }
+
+    .sertificate {
+        height: 66px;
+    }
+
+    .sertificate-text {
+        width: 162px;
+        font-size: 14px;
+    }
+
+    .footer {
+        height: 88px;
+    }
+
+    .foot-logo {
+        width: 38px;
+        height: 38px;
+    }
+
+    .media-img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media (max-width: 630px) {
+    .container {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 585px) {
+    .container {
+        max-width: 555px;
+    }
+
+    .founder {
+        height: 472px;
+    }
+
+    .position {
+        font-size: 9px;
+    }
+
+    .founder-title {
+        font-size: 25px;
+        max-width: 356px;
+    }
+
+    .founder-title-span {
+        font-size: 25px;
+    }
+
+    .about-founder {
+        gap: 12px;
+    }
+
+    .about-founder-block {
+        gap: 12px;
+    }
+
+    .about-founder-text {
+        font-size: 13px;
+        width: 180px;
+    }
+
+    .long-text {
+        width: 428px;
+    }
+
+    .founder-photo {
+        max-height: 270px;
+        right: 7%;
+    }
+
+    .team-title {
+        max-width: 405px;
+    }
+
+    .teacher-photo {
+        width: 170px;
+    }
+
+    .teacher {
+        gap: 0;
+    }
+
+    .teacher-name {
+        font-size: 14px;
+    }
+
+    .experience, .about-teacher {
+        font-size: 13px;
+    }
+
+    .teacher-info, .sertificate {
+        width: 200px;
+    }
+
+    .sertificate-text {
+        width: 149px;
+        font-size: 13px;
+    }
+
+    .footer {
+        height: 76px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        max-width: 470px;
+    }  
+
+    .founder-content {
+        padding-left: 2%;
+    }
+
+    .founder-photo {
+        max-height: 240px;
+    }
+
+    .team-content .position {
+        padding-left: 2%;
+    }
+
+    .team-title {
+        padding-left: 2%;
+    }
+
+    .footer-logo {
+        margin-left: 20px;
+    }
+
+    .social-media {
+        margin-right: 32px;
+    }
+}
+
+@media (max-width: 430px) {
+    .container {
+        max-width: 400px;
+    }
+
+    .founder {
+        height: 445px;
+    }
+
+    .position {
+        font-size: 9px;
+    }
+
+    .founder-title {
+        font-size: 22px;
+        max-width: 345px;
+    }
+
+    .founder-title-span {
+        font-size: 22px;
+    }
+    
+    .about-founder-text {
+        font-size: 12px;
+        width: 180px;
+    }
+    
+    .long-text {
+        width: 316px;
+    }
+
+    .founder-photo {
+        max-height: 220px;
+        right: 4%;
+    }
+
+    .team-title {
+        margin-bottom: 26px;
+    }
+
+    .teachers {
+        gap: 28px;
+    }
+
+    .teacher-info, .sertificate {
+        width: 182px;
+    }
+
+    .teacher-photo {
+        width: 150px;
+    }
+
+    .teacher-name {
+        font-size: 13px;
+    }
+
+    .experience, .about-teacher {
+        font-size: 12px;
+    }
+
+    .sertificate-text {
+        width: 138px;
+        font-size: 12px;
+    }
+
+    .footer {
+        height: 60px;
+        margin-top: 24px;
+    }
+
+    .footer-logo {
+        margin-left: 16px;
+    }
+
+    .foot-logo {
+        width: 34px;
+        height: 34px;
+    }
+
+    .school-name {
+        font-size: 12px;
+        width: 150px;
+    }
+
+    .school-name-span {
+        font-size: 12px;
+    }
+
+    .media-img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .social-media {
+        margin-right: 28px;
+        top: 50%;
+    }
+}
+
+@media (max-width: 390px) {
+    .container {
+        max-width: 370px;
+    }
+
+    .header-wrap {
+        padding: 3%;
+        height: 30px;
+    }
+
+    .logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header-content {
+        height: 30px;
+    }
+
+    .founder {
+        height: 380px;
+    }
+
+    .position {
+        font-size: 8px;
+    }
+
+    .founder-title {
+        font-size: 20px;
+        max-width: 292px;
+        margin-bottom: 8px;
+    }
+
+    .founder-title-span {
+        font-size: 20px;
+    }
+
+    .about-founder {
+        gap: 6px;
+    }
+
+    .about-founder-block {
+        gap: 6px;
+    }
+    
+    .about-founder-text {
+        font-size: 11px;
+        width: 150px;
+    }
+
+    .long-text {
+        width: 290px;
+    }
+
+    .founder-photo {
+        max-height: 200px;
+        right: 5%;
+    }
+
+    .team-title {
+        max-width: 310px;
+        margin-bottom: 20px;
+    }
+
+    .teacher-info, .sertificate {
+        width: 166px;
+    }
+
+    .teacher-name {
+        font-size: 12px;
+    }
+
+    .experience, .about-teacher {
+        font-size: 11px;
+    }
+
+    .sertificate {
+        height: 56px;
+    }
+
+    .sertificate-text {
+        width: 126px;
+        font-size: 11px;
+    }
+
+    .teacher-photo {
+        width: 132px;
+    }
+
+    .footer {
+        margin-top: 16px;
+    }
+
+    .foot-logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .school-name {
+        font-size: 11px;
+        width: 138px;
+    }
+    
+    .school-name-span {
+        font-size: 11px;
+    }
+
+    .social-media {
+        gap: 12px;
+        margin-right: 16px;
+    }
+
+    .media-img {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+@media (max-width: 360px) {
+    .container {
+        max-width: 335px;
+    }
+
+    .founder-photo {
+        max-height: 188px;
+    }
+}
+
+@media (max-width: 340px) {
+    .container {
+        max-width: 335px;
     }
 }

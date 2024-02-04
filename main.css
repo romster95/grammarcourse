@@ -86,6 +86,7 @@ h1, h2 {
     width: 100%;
     display: flex;
     align-items: center;
+    background: white;
 }
 
 .header-wrap {
@@ -1695,6 +1696,10 @@ h1, h2 {
         max-width: 943px;
     }
 
+    .footer-navigation {
+        margin-left: 4px;
+    }
+
     .footer-nav-link {
         font-size: 11px;
     }
@@ -2197,6 +2202,7 @@ h1, h2 {
 
     .footer-navigation {
         margin-top: -8px;
+        margin-left: 4px;
     }
 
     .footer-nav-link {
@@ -2218,6 +2224,12 @@ h1, h2 {
 @media (max-width: 960px) {
     .container {
         max-width: 900px;
+    }
+
+    .header {
+        position: sticky;
+        top: 0;
+        z-index: 3;
     }
 
     .header-wrap {
