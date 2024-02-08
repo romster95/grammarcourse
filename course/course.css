@@ -1417,6 +1417,10 @@ h1 {
         height: 30px;
     }
 
+    .circle {
+        right: 64px;
+    }
+
     .foot-logo {
         width: 30px;
         height: 30px;
@@ -1445,6 +1449,50 @@ h1 {
 @media (max-width: 360px) {
     .container {
         max-width: 335px;
+    }
+
+    .course-main-text {
+        width: 266px;
+    }
+
+    .course-plan-title {
+        font-size: 20px;
+    }
+
+    .course-plan-subtitle {
+        font-size: 11px;
+    }
+
+    .topics {
+        margin-bottom: 32px;
+    }
+
+    .topic-wrapper, .topic-title {
+        width: 286px;
+    }
+    
+    .topic-title {
+        font-size: 13px;
+        padding: 8px 0;
+    }
+
+    .topics-list {
+        max-width: 168px;
+        font-size: 11px;
+        left: 27%;
+    }
+
+    .buy-course-btn {
+        font-size: 13px;
+        width: 200px;
+        height: 38px;
+    }
+
+    .circle {
+        width: 36px;
+        height: 36px;
+        right: 50px;
+        bottom: 18px;
     }
 }
 
