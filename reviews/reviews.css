@@ -52,11 +52,19 @@
 
 /* font-family: 'Cormorant Garamond', serif; */
 
-body {
+html, body {
     margin: 0;
+    height: 100%;
+    box-sizing: border-box;
     font-family: 'Artegra-sans';
     font-size: 33px;
     color: #1C202B;
+}
+
+.body-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -69,9 +77,7 @@ h1, h2, h3 {
    letter-spacing: 1.2px;
 }
 
-
 /* Container */
-
 
 .container {
     width: 100%;
@@ -82,9 +88,7 @@ h1, h2, h3 {
 /* Header */
 
 .header {
-    height: 100%;
-    max-height: 75px;
-    padding: 12px 0;
+    height: 75px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -92,7 +96,6 @@ h1, h2, h3 {
 
 .header-wrap {
     display: flex;
-    justify-content: space-between;
     padding: 0 31px;
 }
 
@@ -101,8 +104,18 @@ h1, h2, h3 {
     height: 51px;
 }
 
+.header-content {
+    display: flex;
+    width: 100%;
+}
+
+.navigation-wrap {
+    display: flex;
+    width: 100%;
+}
+
 .navigation {
-    margin-left: 41px;
+    margin: 0 auto;
 }
 
 .nav-link {
@@ -113,11 +126,6 @@ h1, h2, h3 {
     transition: font-weight 0.2s, color 0.2s;
 }
 
-.nav-link:hover {
-    transition: 0.2s;
-    font-weight: 600; 
-    color: #0066A9;
-}
 
 .nav-link:not(:last-of-type) {
     margin-right: 90px;
@@ -144,33 +152,98 @@ h1, h2, h3 {
     transition: background 0.3s, color 0.3s;
 }
 
-.btn:hover {
-    background: #0066A9;
-    color: #DCF2FF; 
+/* Hamburger menu */
+
+.hamburger {
+    position: relative;
+    width: 25px;
+    height: 3px;
+    background: #58606e;
+    opacity: 0.7;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 3;
     transition: 0.3s;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    right: 0;
+    background: #58606e;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.hamburger::before {
+    top: -8px;
+    width: 25px;
+}
+
+.hamburger::after {
+    top: 8px;
+    width: 25px;
+}
+
+.toggle-menu {
+    position: absolute;
+    width: 25px;
+    height: 30px;
+    z-index: 4;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.hamburger,
+.toggle-menu {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* наприклад, напівпрозорий чорний фон */
+    display: none;
+    z-index: 1;
+}
+
+.overlay.open {
+    display: block;
 }
 
 /* Reviews */
 
 .reviews {
-    margin: 100px 0;
-}
-
-.swiper {
-    width: 100%;
-    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
 }
 
 .reviews-title {
-    text-align: center;
-    
+    padding-bottom: 2%;
+    text-align: center;   
 }
 
-.two-reviews {
+.swiper {
+    padding-top: 2% !important;
+}
+
+.swiper-slide:nth-child(odd) {
     display: flex;
-    justify-content: center;
-    gap: 80px;
-    margin-top: 95px;
+    justify-content: flex-end;
+}
+
+.swiper-slide:nth-child(odd) .review {
+    margin-right: 40px;
+}
+
+.swiper-slide:nth-child(even) .review {
+    margin-left: 40px;
 }
 
 .review {
@@ -208,12 +281,14 @@ h1, h2, h3 {
 }
 
 .swiper-button-prev {
-    left: 19% !important; 
+    left: 18% !important; 
+    top: 50% !important;
     color: #0066A9 !important;
 }
 
 .swiper-button-next {
-    right: 19% !important;
+    right: 18% !important;
+    top: 50% !important;
     color: #0066A9 !important;
 }
 
@@ -249,7 +324,6 @@ h1, h2, h3 {
 
 .school-name-span {
     color: #5D616B;
-    font-size: 22px;
     font-weight: 400;
 }
 
@@ -297,4 +371,902 @@ h1, h2, h3 {
     opacity: 0.7;
     width: 148px;
     margin-right: 118px;
+}
+
+@media (hover: hover) {
+    .nav-link:hover {
+        transition: 0.2s;
+        font-weight: 600; 
+        color: #0066A9;
+    }
+
+    .btn:hover {
+        background: #0066A9;
+        color: #DCF2FF; 
+        transition: 0.3s;
+    }
+
+}
+
+@media (max-width: 1720px) {
+    .container {
+        max-width: 1760px;
+    }
+
+    .swiper {
+        padding-top: 1% !important;
+    }
+
+    .swiper-slide:nth-child(odd) .review {
+        margin-right: 30px;
+    }
+    
+    .swiper-slide:nth-child(even) .review {
+        margin-left: 30px;
+    }
+
+    .swiper-button-prev {
+        left: 17% !important;
+    }
+
+    .swiper-button-next {
+        right: 17% !important;
+    }
+
+    .footer {
+        height: 200px;
+    }
+
+    .footer-logo {
+        padding-top: 20px;
+    }
+
+    .foot-logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .school-name {
+        font-size: 19px;
+        width: 230px;
+    }
+
+    .social-media {
+        gap: 17px;
+        margin-right: 2%;
+    }
+
+    .footer-line {
+        width: 95.5%;
+        margin: 0px auto 4px;
+    }
+
+    .footer-navigation {
+        margin-left: 2.1%;
+    }
+
+    .footer-nav-link:not(:last-of-type) {
+        margin-right: 40px;
+    }
+
+    .phone-number {
+        margin-top: 18px;
+        margin-right: 1%;
+    }
+}
+
+@media (max-width: 1600px) {
+    .container {
+        max-width: 1326px;
+    }
+
+    .header {
+        height: 60px;
+    }
+
+    .logo {
+        width: 47px;
+        height: 47px;
+    }
+    
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+        width: 300px;
+        height: 47px;
+    }
+
+    .reviews-title {
+        font-size: 38px;
+    }
+
+    .review {
+        width: 390px;
+        height: 320px;
+    }
+
+    .stars {
+        width: 150px;
+        margin-top: 8%;
+        margin-left: 8%;
+    }
+
+    .text {
+        margin-top: 0%;
+        margin-left: 11%;
+    }
+
+    .review-title {
+        font-size: 28px;
+    }
+
+    .review-text {
+        max-width: 300px;
+        font-size: 14px;
+    }
+
+    .swiper-button-prev {
+        left: 13% !important;
+    }
+
+    .swiper-button-next {
+        right: 13% !important;
+    }
+
+    .footer {
+        height: 200px;
+    }
+
+    .footer-logo {
+        padding-top: 20px;
+    }
+
+    .foot-logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .school-name {
+        font-size: 19px;
+        width: 230px;
+    }
+
+    .social-media {
+        gap: 17px;
+    }
+
+    .footer-line {
+        width: 97%;
+        margin: 0px auto 4px;
+    }
+
+    .footer-nav-link:not(:last-of-type) {
+        margin-right: 40px;
+    }
+
+    .phone-number {
+        margin-top: 18px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .reviews-title {
+        font-size: 32px;
+    }
+
+    .review {
+        width: 342px;
+        height: 274px;
+    }
+
+    .stars {
+        width: 120px;
+        margin-top: 8%;
+        margin-left: 8%;
+    }
+
+    .text {
+        margin-top: 0%;
+        margin-left: 11%;
+    }
+
+    .review-title {
+        font-size: 24px;
+    }
+
+    .review-text {
+        max-width: 260px;
+        font-size: 12px;
+    }
+
+    .swiper-button-prev {
+        left: 17% !important;
+    }
+
+    .swiper-button-prev::after, 
+    .swiper-button-next::after {
+        font-size: 36px !important;
+    }
+
+    .swiper-button-next {
+        right: 17% !important;
+    }
+
+    .footer {
+        height: 188px;
+    }
+
+    .foot-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .school-name {
+        font-size: 18px;
+        width: 202px;
+    }
+}
+
+@media (max-width: 1335px) {
+    .container {
+        max-width: 1235px;
+    }
+
+    .logo {
+        width: 43px;
+        height: 43px;
+    }
+
+    .nav-link {
+        font-size: 13px;
+    }
+
+    .nav-link:not(:last-of-type) {
+        margin-right: 70px;
+    }
+
+    .btn {
+        font-size: 13px;
+        width: 285px;
+    }
+
+    .reviews-title {
+        font-size: 32px;
+    }
+
+    .swiper-slide:nth-child(odd) .review {
+        margin-right: 20px;
+    }
+
+    .swiper-slide:nth-child(even) .review {
+        margin-left: 20px;
+    }
+
+    .review {
+        width: 342px;
+        height: 274px;
+    }
+
+    .stars {
+        width: 120px;
+        margin-top: 8%;
+        margin-left: 8%;
+    }
+
+    .text {
+        margin-top: 0%;
+        margin-left: 11%;
+    }
+
+    .review-title {
+        font-size: 24px;
+    }
+
+    .review-text {
+        max-width: 260px;
+        font-size: 12px;
+    }
+
+    .swiper-button-prev {
+        left: 16% !important;
+    }
+
+    .swiper-button-next {
+        right: 16% !important;
+    }
+
+    .footer {
+        height: 100px;
+        position: relative;
+    }
+
+    .footer-logo {
+        padding: 0;
+        margin-left: 40px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .foot-logo {
+        width: 38px;
+        height: 38px;
+    }
+
+    .social-media {
+        position: absolute;
+        right: 4%;
+        top: 53%;
+        transform: translateY(-50%);
+    }
+
+    .media-img {
+        height: 19px;
+        width: 19px;
+    }
+
+    .footer-line {
+        display: none;
+    }
+
+    .footer-text {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1120px;
+    }
+    
+    .header {
+        height: 50px;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .navigation {
+        margin-top: -5px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .btn {
+        font-size: 12px;
+        width: 245px;
+        height: 38px;
+    }
+
+    .reviews-title {
+        font-size: 28px;
+    }
+
+    .review {
+        width: 305px;
+        height: 244px;
+    }
+
+    .stars {
+        width: 100px;
+    }
+
+    .text {
+        margin-top: -2%;
+        margin-left: 10%;
+    }
+
+    .review-title {
+        font-size: 21px;
+    }
+
+    .review-text {
+        max-width: 240px;
+        font-size: 11px;
+    }
+
+    .footer {
+        height: 80px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .container {
+        max-width: 980px;
+    }
+
+    .header-wrap {
+        padding: 0px 12px;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-link:not(:last-of-type) {
+        margin-right: 62px;
+    }
+
+    .swiper-button-prev {
+        left: 12% !important;
+    }
+
+    .swiper-button-next {
+        right: 12% !important;
+    }
+
+    .footer-logo {
+        gap: 12px;
+    }
+
+    .foot-logo {
+        width: 38px;
+        height: 38px;
+    }
+
+    .school-name {
+        margin-top: 22px;
+        font-size: 16px;
+        width: 180px;
+    }
+}
+
+@media (max-width: 960px) {
+    .container {
+        max-width: 900px;
+    }
+
+    .header {
+        position: sticky;
+        top: 0;
+        z-index: 3;
+    }
+
+    .header-wrap {
+        padding: 2%;
+    }
+    
+    .hamburger,
+    .toggle-menu {
+        display: block;
+    }
+
+    .header-content {
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .navigation-wrap {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 100%;
+        position: fixed;
+        right: -300px;
+        top: 0;
+        gap: 12px;
+        padding-top: 72px;
+        background: #ffffff;
+        transition: 0.3s;
+        z-index: 2;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        margin-left: 22px;
+        width: 85%;
+    }
+
+    .nav-link {
+        font-size: 13px;
+        padding: 10px 8px;
+    }
+
+    .nav-link:not(:first-of-type) {
+        border-top: 1px solid #657085cd;
+    }
+
+    .btn {
+        font-size: 13px;
+        margin: 0 auto;
+        width: 255px;
+        height: 42px;
+    }
+
+    .nav-link:not(:last-of-type) {
+        margin-right: 0;
+    }
+
+    .header-content input:checked ~ .hamburger {
+        background: transparent;
+    }
+    
+    .header-content input:checked ~ .hamburger::before {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    
+    .header-content input:checked ~ .hamburger::after {
+        top: 0;
+        transform: rotate(45deg);
+    }
+    
+    .header-content input:checked ~ .navigation-wrap {
+        right: 0;
+        box-shadow: -20px 0 40px rgba(0, 0, 0, 0.3);
+    }
+    
+    .header-content input:checked ~ body {
+        background-color: rgba(128,128,128, 0.3);
+    }
+
+    .reviews-title {
+        font-size: 24px;
+    }
+
+    .review {
+        width: 265px;
+        height: 215px;
+    }
+
+    .stars {
+        width: 80px;
+    }
+
+    .text {
+        margin-top: -2%;
+        margin-left: 10%;
+    }
+
+    .review-title {
+        font-size: 18px;
+    }
+
+    .review-text {
+        max-width: 210px;
+        margin-top: 8px;
+        font-size: 10px;
+    }
+
+    .swiper-button-prev {
+        left: 13% !important;
+    }
+
+    .swiper-button-next {
+        right: 13% !important;
+    }
+
+    .swiper-button-prev::after, 
+    .swiper-button-next::after {
+        font-size: 30px !important;
+    }
+
+    .footer {
+        height: 70px;
+    }
+
+    .footer-logo {
+        margin-left: 16px;
+    }
+
+    .social-media {
+        right: 3%;
+    }
+}
+
+@media (max-width: 820px) {
+    .container {
+        max-width: 780px;
+    }
+
+    .review {
+        margin: 0 auto !important;
+    }
+
+    .swiper-button-prev {
+        left: 25% !important;
+    }
+
+    .swiper-button-next {
+        right: 25% !important;
+    }
+}
+
+@media (max-width: 755px) {
+    .container {
+        max-width: 715px;
+    }
+
+    .header {
+        height: 42px;
+    }
+
+    .logo {
+        width: 34px;
+        height: 34px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .btn {
+        font-size: 12px;
+    }
+
+    .reviews-title {
+        font-size: 22px;
+        padding-bottom: 3%;
+    }
+
+    .review {
+        width: 240px;
+        height: 206px;
+    }
+
+    .stars {
+        width: 75px;
+    }
+
+    .review-title {
+        font-size: 16px;
+    }
+
+    .review-text {
+        max-width: 190px;
+        margin-top: 6px;
+        font-size: 10px;
+    }
+
+    .swiper-button-prev::after, .swiper-button-next::after {
+        font-size: 26px !important;
+    }
+
+    .school-name {
+        font-size: 14px;
+        width: 156px;
+    }
+}
+
+@media (max-width: 680px) {
+    .container {
+        max-width: 650px;
+    }
+
+    .logo {
+        width: 32px;
+        height: 32px;
+    }
+
+    .hamburger::before {
+        top: -7px;
+    }
+
+    .hamburger::after {
+        top: 7px;
+    }
+
+    .swiper-button-prev {
+        left: 24% !important;
+    }
+
+    .swiper-button-next {
+        right: 24% !important;
+    }
+
+    .media-img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media (max-width: 630px) {
+    .container {
+        max-width: 600px;
+    }
+
+    .swiper-button-prev {
+        left: 22% !important;
+    }
+
+    .swiper-button-next {
+        right: 22% !important;
+    }
+}
+
+@media (max-width: 585px) {
+    .container {
+        max-width: 555px;
+    }
+
+    .swiper-button-prev {
+        left: 20% !important;
+    }
+
+    .swiper-button-next {
+        right: 20% !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        max-width: 470px;
+    }  
+
+    .course-plan-title {
+        font-size: 22px;
+    }
+
+    .swiper-button-prev {
+        left: 15% !important;
+    }
+
+    .swiper-button-next {
+        right: 15% !important;
+    }
+
+    .footer-logo {
+        margin-left: 20px;
+    }
+
+    .social-media {
+        margin-right: 32px;
+    }
+}
+
+@media (max-width: 430px) {
+    .container {
+        max-width: 400px;
+    }
+
+    .reviews-title {
+        font-size: 20px;
+        padding-bottom: 4%;
+    }
+
+    .review {
+        width: 215px;
+        height: 185px;
+    }
+
+    .stars {
+        width: 70px;
+        margin-top: 8%;
+        margin-left: 9%;
+    }
+
+    .text {
+        margin-top: -3%;
+    }
+
+    .review-title {
+        font-size: 15px;
+    }
+
+    .review-text {
+        max-width: 170px;
+        margin-top: 5px;
+        font-size: 9px;
+    }
+
+    .swiper-button-prev {
+        left: 11% !important;
+    }
+
+    .swiper-button-next {
+        right: 11% !important;
+    }
+
+    .footer {
+        height: 60px;
+    }
+
+    .footer-logo {
+        margin-left: 16px;
+    }
+
+    .foot-logo {
+        width: 34px;
+        height: 34px;
+    }
+
+    .school-name {
+        font-size: 12px;
+        width: 150px;
+    }
+
+    .school-name-span {
+        font-size: 12px;
+    }
+
+    .media-img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .social-media {
+        margin-right: 28px;
+        top: 50%;
+    }
+}
+
+@media (max-width: 390px) {
+    .container {
+        max-width: 370px;
+    }
+
+    .header-wrap {
+        padding: 3%;
+        height: 30px;
+    }
+
+    .logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header-content {
+        height: 30px;
+    }
+
+    .swiper-button-prev {
+        left: 10% !important;
+    }
+
+    .swiper-button-next {
+        right: 10% !important;
+    }
+
+    .foot-logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .school-name {
+        font-size: 11px;
+        width: 138px;
+    }
+    
+    .school-name-span {
+        font-size: 11px;
+    }
+
+    .social-media {
+        gap: 12px;
+        margin-right: 16px;
+    }
+
+    .media-img {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+@media (max-width: 360px) {
+    .container {
+        max-width: 335px;
+    }
+
+    .swiper-button-prev {
+        left: 6% !important;
+    }
+
+    .swiper-button-next {
+        right: 6% !important;
+    }
+}
+
+@media (max-width: 340px) {
+    .container {
+        max-width: 335px;
+    }
 }
