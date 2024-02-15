@@ -596,17 +596,41 @@ h1, h2, h3 {
     }
 
     .footer {
-        height: 188px;
+        height: 100px;
+        position: relative;
+    }
+
+    .footer-logo {
+        padding: 0;
+        margin-left: 40px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     .foot-logo {
-        width: 50px;
-        height: 50px;
+        width: 38px;
+        height: 38px;
     }
 
-    .school-name {
-        font-size: 18px;
-        width: 202px;
+    .social-media {
+        position: absolute;
+        right: 4%;
+        top: 53%;
+        transform: translateY(-50%);
+    }
+
+    .media-img {
+        height: 19px;
+        width: 19px;
+    }
+
+    .footer-line {
+        display: none;
+    }
+
+    .footer-text {
+        display: none;
     }
 }
 
@@ -676,44 +700,6 @@ h1, h2, h3 {
 
     .swiper-button-next {
         right: 16% !important;
-    }
-
-    .footer {
-        height: 100px;
-        position: relative;
-    }
-
-    .footer-logo {
-        padding: 0;
-        margin-left: 40px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .foot-logo {
-        width: 38px;
-        height: 38px;
-    }
-
-    .social-media {
-        position: absolute;
-        right: 4%;
-        top: 53%;
-        transform: translateY(-50%);
-    }
-
-    .media-img {
-        height: 19px;
-        width: 19px;
-    }
-
-    .footer-line {
-        display: none;
-    }
-
-    .footer-text {
-        display: none;
     }
 }
 
