@@ -54,7 +54,7 @@
 
 html, body {
     margin: 0;
-    height: 100%;
+    height: 100svh;
     box-sizing: border-box;
     font-family: 'Artegra-sans';
     font-size: 33px;
