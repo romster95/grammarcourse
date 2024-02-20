@@ -220,12 +220,11 @@ h1, h2 {
 
  /* Main screen of free lesson */
 
-.free-lesson-intro {
+ .free-lesson-intro {
     background-color: #018961;
-    
+    flex: 1;
     display: flex;
     align-items: center;
-    flex: 1;
 }
 
 .free-lesson-content {
@@ -304,9 +303,6 @@ h1, h2 {
 .footer {
     height: 236px;
     background: #F3F8FF;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
 }
 
 .foot-logo {
@@ -1232,7 +1228,7 @@ h1, h2 {
     }
 
     .form-title {
-        font-size: 1px;
+        font-size: 11px;
         line-height: 15px;
         max-width: 254px;
     }
