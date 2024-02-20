@@ -54,7 +54,7 @@
 
 html, body {
     margin: 0;
-    min-height: -webkit-fill-available;
+    height: 100%;
     box-sizing: border-box;
     font-family: 'Artegra-sans';
     font-size: 33px;
@@ -62,8 +62,7 @@ html, body {
 }
 
 .body-wrapper {
-    position: relative;
-    min-height: 100vh;
+    min-height: 100svh;
     display: flex;
     flex-direction: column;
 }
@@ -303,8 +302,6 @@ h1, h2 {
 /* Footer */
 
 .footer {
-    position: absolute;
-    bottom: 0;
     height: 236px;
     background: #F3F8FF;
 }
