@@ -47,10 +47,10 @@
                     <div class="types">
                         <div class="sides">
                             <h2 class="sides-title"><span class="sides-title-span">Заняття</span> в парі</h2>
-                            <p class="sides-text">вартість (350 грн) <br>є місця - деталі уточнюй  в direct @mila.english.school</p>
+                            <p class="sides-text">вартість (400 грн) <br>є місця - деталі уточнюй  в direct @mila.english.school</p>
                         </div>
                         <div class="central">
-                            <p class="central-text">з Міленою - наразі немає місць<span class="space"></span>з іншими вчителями школи - <br> вартість (400-600 грн), за <br>деталями та щоб записатися - <br> пиши в direct @mila.english.school</p>
+                            <p class="central-text">з Міленою - вартість (750 грн)<span class="space"></span>з іншими вчителями школи - <br> вартість (450-700 грн), за <br>деталями та щоб записатися - <br> пиши в direct @mila.english.school</p>
                         </div>
                         <div class="sides">
                             <h2 class="sides-title"><span class="sides-title-span">Заняття</span> в групі</h2>
@@ -60,8 +60,27 @@
                 </div>
                 <div class="btn-wrapper">
                     <img class="arrow left" src="../img/left-arrow.png" alt="left-arrow">
-                    <a class="buy-course-btn" href="#">Приєднатись до курсу</a>
+                    <button class="buy-course-btn" id="buy-course-btn">Приєднатись до курсу</button>
                     <img class="arrow right" src="../img/right-arrow.png" alt="right-arrow">
+                </div>
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <div class="close-wrap">
+                            <input type="checkbox" class="toggle-menu close check-close">
+                            <div class="hamburger close"></div>
+                        </div>
+                      <h2 class="modal-title">Оберіть тип курсу:</h2>
+                      <div class="course-types">
+                        <div class="course-type">
+                            <p class="type-title">З фідбеком від Мілени</p>
+                            <a class="type-btn" href="https://secure.wayforpay.com/button/bec5a39735607" target="_blank">Приєднатись</a>
+                          </div>
+                          <div class="course-type">
+                            <p class="type-title">Без фідбеку</p>
+                            <a class="type-btn" href="https://secure.wayforpay.com/button/b590fb2a7230f" target="_blank">Приєднатись</a>
+                          </div>
+                      </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -91,5 +110,6 @@
         </footer>
     </div>
 </body>
+<script src="../formats/formats.js"></script>
 <script src="../script.js"></script>
 </html>

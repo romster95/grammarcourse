@@ -65,6 +65,25 @@ html, body {
     min-height: 100svh;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.body-wrapper::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(90, 90, 90, 0.9) url("./img/loading.gif") center / 32px no-repeat;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9;
+}
+
+.body-wrapper._sending::after{
+    opacity: 1;
+    visibility: visible;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -232,7 +251,8 @@ h1, h2 {
     max-width: 1564px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 186px;
     margin: 0 auto;
 }
 
@@ -247,8 +267,8 @@ h1, h2 {
 /* Form */
 
 .form-container {
-    width: 740px;
-    height: 492px;
+    width: 560px;
+    height: 550px;
     border-radius: 8px;
     background: #FFF;
     display: flex;
@@ -257,7 +277,10 @@ h1, h2 {
 }
 
 .form-container-content {
-    margin-left: 46px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-title {
@@ -265,38 +288,24 @@ h1, h2 {
     font-size: 24px;
     font-weight: 600;
     line-height: 27px; 
-    max-width: 624px;
-    margin-bottom: 34px;
+    max-width: 428px;
     margin-top: 0;
-}
-
-.form-input {
-    width: 628px;
-    height: 54px;
-    border-radius: 4px;
-    border: 1px solid #C2CAD3;
-    background: #FFF;
-    color: #575757;
-    padding-left: 22px;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.form-input:not(:last-of-type) {
-    margin-bottom: 22px;
+    margin-bottom: 8px;
 }
 
 .form-btn {
-    width: 265px;
-    height: 66px;
-    border: 0;
+    display: flex;
+    width: 478px;
+    height: 73px;
     border-radius: 4px;
     background: #0A61F7;
     color: #FFF;
-    text-align: center;
-    font-size: 20px;
-    margin-top: 20px;
+    font-size: 24px;
+    margin-top: 16px;
     transition: background 0.3s;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
 /* Footer */
@@ -472,6 +481,7 @@ h1, h2 {
 
     .free-lesson-content {
         max-width: 1248px;
+        gap: 148px;
     }
 
     .free-lesson-title {
@@ -480,36 +490,25 @@ h1, h2 {
     }
 
     .form-container {
-        width: 596px;
-        height: 440px;
-    }
-
-    .form-container-content {
-        margin-left: 38px;
+        width: 470px;
+        height: 476px;
     }
 
     .form-title {
         font-size: 20px;
         line-height: 26px;
-        max-width: 508px;
-        margin-bottom: 24px;
+        max-width: 356px;
     }
 
-    .form-input {
-        width: 490px;
-        height: 50px;
-        padding-left: 18px;
-        font-size: 15px;
-    }
-
-    .form-input:not(:last-of-type) {
-        margin-bottom: 20px;
+    .telegram-qr {
+        width: 285px;
     }
 
     .form-btn {
-        width: 236px;
-        height: 60px;
-        margin-top: 0;
+        font-size: 22px;
+        width: 356px;
+        height: 62px;
+        margin-top: 4px;
     }
 
     .footer {
@@ -549,6 +548,15 @@ h1, h2 {
 }
 
 @media (max-width: 1440px) {
+    .form-container {
+        width: 456px;
+        height: 456px;
+    }
+
+    .telegram-qr {
+        width: 260px;
+    }
+
     .footer {
         height: 100px;
         position: relative;
@@ -647,6 +655,7 @@ h1, h2 {
 
     .free-lesson-content {
         max-width: 984px;
+        gap: 104px;
     }
 
     .free-lesson-title {
@@ -655,34 +664,23 @@ h1, h2 {
     }
 
     .form-container {
-        width: 472px;
-        height: 370px;
-    }
-
-    .form-container-content {
-        margin-left: 32px;
+        width: 350px;
+        height: 366px;
     }
 
     .form-title {
         font-size: 16px;
         line-height: 24px;
-        max-width: 408px;
-        margin-bottom: 16px;
+        max-width: 285px;
+        margin-bottom: 0px;
     }
 
-    .form-input {
-        width: 390px;
-        height: 40px;
-        padding-left: 15px;
-        font-size: 13px;
-    }
-
-    .form-input:not(:last-of-type) {
-        margin-bottom: 16px;
+    .telegram-qr {
+        width: 215px;
     }
 
     .form-btn {
-        width: 190px;
+        width: 285px;
         height: 50px;
         font-size: 16px;
     }
@@ -818,6 +816,7 @@ h1, h2 {
 
     .free-lesson-content {
         max-width: 785px;
+        gap: 80px;
     }
 
     .free-lesson-title {
@@ -826,34 +825,23 @@ h1, h2 {
     }
 
     .form-container {
-        width: 382px;
-        height: 305px;
-    }
-
-    .form-container-content {
-        margin-left: 26px;
+        width: 278px;
+        height: 298px;
     }
 
     .form-title {
         font-size: 13px;
         line-height: 20px;
-        max-width: 330px;
-        margin-bottom: 8px;
+        max-width: 232px;
+        margin-bottom: 0px;
     }
 
-    .form-input {
-        width: 313px;
-        height: 34px;
-        padding-left: 14px;
-        font-size: 12px;
-    }
-
-    .form-input:not(:last-of-type) {
-        margin-bottom: 8px;
+    .telegram-qr {
+        width: 180px;
     }
 
     .form-btn {
-        width: 150px;
+        width: 232px;
         height: 42px;
         font-size: 14px;
     }
@@ -905,6 +893,7 @@ h1, h2 {
 
     .free-lesson-content {
         max-width: 655px;
+        gap: 64px;
     }
 
     .free-lesson-title {
@@ -913,34 +902,22 @@ h1, h2 {
     }
 
     .form-container {
-        width: 314px;
-        height: 265px;
-    }
-
-    .form-container-content {
-        margin-left: 22px;
+        width: 255px;
+        height: 260px;
     }
 
     .form-title {
         font-size: 12px;
         line-height: 18px;
-        max-width: 270px;
-        margin-bottom: 4px;
+        max-width: 214px;
     }
 
-    .form-input {
-        width: 254px;
-        height: 28px;
-        padding-left: 12px;
-        font-size: 10px;
-    }
-
-    .form-input:not(:last-of-type) {
-        margin-bottom: 4px;
+    .telegram-qr {
+        width: 155px;
     }
 
     .form-btn {
-        width: 130px;
+        width: 214px;
         height: 35px;
         font-size: 12px;
     }
@@ -974,34 +951,22 @@ h1, h2 {
     }
 
     .form-container {
-        width: 284px;
-        height: 245px;
-    }
-
-    .form-container-content {
-        margin-left: 18px;
+        width: 228px;
+        height: 240px;
     }
 
     .form-title {
         font-size: 11px;
         line-height: 18px;
-        max-width: 248px;
-        margin-bottom: 0;
+        max-width: 196px;
     }
 
-    .form-input {
-        width: 235px;
-        height: 26px;
-        padding-left: 10px;
-        font-size: 9px;
-    }
-
-    .form-input:not(:last-of-type) {
-        margin-bottom: 0;
+    .telegram-qr {
+        width: 140px;
     }
 
     .form-btn {
-        width: 115px;
+        width: 196px;
         height: 32px;
         font-size: 10px;
     }
@@ -1029,12 +994,12 @@ h1, h2 {
     }
 
     .form-container {
-        width: 275px;
-        height: 242px;
+        width: 232px;
+        height: 230px;
     }
 
-    .form-container-content {
-        margin-left: 14px;
+    .telegram-qr {
+        width: 132px;
     }
 }
 
@@ -1045,8 +1010,7 @@ h1, h2 {
     
     .free-lesson-content {
         flex-direction: column;
-        justify-content: space-evenly;
-        height: 430px;
+        gap: 44px;
     }
 
     .free-lesson-title {
@@ -1055,34 +1019,19 @@ h1, h2 {
     }
 
     .form-container {
-        width: 349px;
-        height: 270px;
-    }
-
-    .form-container-content {
-        margin-left: 22px;
+        width: 265px;
+        height: 250px;
     }
 
     .form-title {
         font-size: 12px;
         line-height: 20px;
-        max-width: 305px;
-        margin-bottom: 4px;
-    }
-
-    .form-input {
-        width: 290px;
-        height: 32px;
-        padding-left: 12px;
-        font-size: 11px;
-    }
-
-    .form-input:not(:last-of-type) {
-        margin-bottom: 4px;
+        max-width: 230px;
+        text-align: center;
     }
 
     .form-btn {
-        width: 305px;
+        width: 230px;
         height: 37px;
         font-size: 12px;
     }
@@ -1106,7 +1055,7 @@ h1, h2 {
     }
 
     .free-lesson-content {
-        height: 415px;
+        gap: 38px;
     }
 
     .footer {
@@ -1155,7 +1104,7 @@ h1, h2 {
     }
 
     .free-lesson-content {
-        height: 400px;
+        gap: 30px;
     }
 
     .free-lesson-title {
@@ -1164,31 +1113,23 @@ h1, h2 {
     }
 
     .form-container {
-        width: 324px;
-        height: 250px;
+        width: 240px;
+        height: 228px;
     }
 
     .form-title {
         font-size: 11px;
         line-height: 17px;
-        max-width: 280px;
-        margin-bottom: 0px;
+        max-width: 210px;
     }
 
-    .form-input {
-        width: 266px;
-        height: 30px;
-        padding-left: 10px;
-        font-size: 11px;
-    }
-
-    .form-input:not(:last-of-type) {
-        margin-bottom: 2px;
+    .telegram-qr {
+        width: 122px;
     }
 
     .form-btn {
-        width: 281px;
-        height: 36px;
+        width: 210px;
+        height: 34px;
         font-size: 12px;
     }
 
@@ -1216,37 +1157,17 @@ h1, h2 {
 
 @media (max-width: 340px) {
     .free-lesson-content {
-        height: 380px;
-    }
-
-    .form-container {
-        width: 286px;
-        height: 240px;
-    }
-
-    .form-container-content {
-        margin-left: 16px;
+        gap: 26px;
     }
 
     .form-title {
         font-size: 11px;
         line-height: 15px;
-        max-width: 254px;
-    }
-
-    .form-input {
-        width: 240px;
-        height: 28px;
-        padding-left: 10px;
-        font-size: 11px;
-    }
-
-    .form-input:not(:last-of-type) {
-        margin-bottom: 0;
+        max-width: 200px;
     }
 
     .form-btn {
-        width: 257px;
+        width: 200px;
         height: 34px;
         font-size: 11px;
     }

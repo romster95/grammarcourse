@@ -202,7 +202,7 @@ h1, h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* наприклад, напівпрозорий чорний фон */
+    background-color: rgba(0, 0, 0, 0.3); 
     display: none;
     z-index: 1;
 }
@@ -545,6 +545,7 @@ h1, h2 {
     font-size: 32px;
     width: 27%;
     height: 84px;
+    border: none;
     border-radius: 25px;
     background: #FFF;
     display: flex;
@@ -585,7 +586,6 @@ h1, h2 {
     flex-direction: column;
     gap: 52px;
     width: 83%;
-    /* max-width: 1465px; */
     margin: 56px auto 0;
 }
 
@@ -753,6 +753,116 @@ h1, h2 {
     margin-right: 118px;
 }
 
+/* Modal */
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 4; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #F3F8FF;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 25px;
+    width: 1438px;
+    height: 428px;
+    animation: modal-fall 0.5s ease forwards;
+}
+
+@keyframes modal-fall {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal.show {
+    animation: modal-fall 0.5s ease forwards; 
+}
+
+.modal-title {
+    color: #000;
+    text-align: center;
+    margin-top: 3.5%;
+    margin-bottom: 16px;
+}
+
+.course-types {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4%;
+}
+
+.course-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.type-title {
+    color: #000;
+    font-weight: 500;
+    margin: 0;
+}
+
+.type-btn {
+    color: #fff;
+    font-size: 32px;
+    width: 465px;
+    height: 84px;
+    border-radius: 25px;
+    background: #018961;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 16px auto 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+.close-wrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+    margin-right: 12px;
+}
+
+.check-close {
+    top: 28px;
+}
+
+.close {
+    display: block;
+    background: transparent;
+}
+
+.close::before {
+    width: 32px;
+    top: 0;
+    transform: rotate(-45deg);
+    transition: transform 0.3s ease;
+}
+
+.close::after {
+    width: 32px;
+    top: 0;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+
 @media (hover: hover) {
     .nav-link:hover {
         transition: 0.2s;
@@ -776,6 +886,12 @@ h1, h2 {
         text-decoration: none;
         background-color: #018961;
         color: #FFF;
+    }
+
+    .type-btn:hover {
+        background: #006f4e;
+        color: #ffffff; 
+        transition: 0.3s;
     }
 }
 
@@ -1084,6 +1200,61 @@ h1, h2 {
 
     .phone-number {
         margin-top: 18px;
+    }
+
+    .modal-content {
+        width: 1148px;
+        height: 374px;
+    }
+
+    .modal-title {
+        margin-top: 2.5%;
+        margin-bottom: 0;
+        font-size: 42px;
+    }
+
+    .course-types {
+        margin-top: 5%;
+    }
+
+    .type-title {
+        font-size: 30px;
+    }
+
+    .type-btn {
+        font-size: 28px;
+        width: 420px;
+        height: 76px;
+        margin: 12px auto 0;
+    }
+}
+
+@media (max-width: 1440px) {
+    .modal-content {
+        width: 1040px;
+        height: 328px;
+    }
+
+    .close::before, .close::after {
+        width: 28px;
+    }
+
+    .modal-title {
+        font-size: 40px;
+    }
+
+    .course-types {
+        margin-top: 4%;
+    }
+
+    .type-title {
+        font-size: 28px;
+    }
+
+    .type-btn {
+        font-size: 26px;
+        width: 380px;
+        height: 74px;
     }
 }
 
@@ -1713,6 +1884,27 @@ h1, h2 {
         width: 108px;
         margin-right: 0;
     }
+
+    .modal-content {
+        padding: 12px;
+        width: 912px;
+        height: 300px;
+    }
+
+    .modal-title {
+        font-size: 36px;
+        margin-top: 2%;
+    }
+
+    .type-title {
+        font-size: 25px;
+    }
+
+    .type-btn {
+        font-size: 24px;
+        width: 335px;
+        height: 68px;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -1850,6 +2042,41 @@ h1, h2 {
         width: 105px;
         margin-right: 0;
         margin-top: 13px;
+    }
+
+
+    .modal-content {
+        width: 800px;
+        height: 260px;
+    }
+
+    .check-close {
+        top: 24px;
+        width: 19px;
+        height: 22px;
+    }
+
+    .close::before, .close::after {
+        width: 23px;
+    }
+
+    .modal-title {
+        font-size: 31px;
+    }
+
+    .course-types {
+        margin-top: 3%;
+        justify-content: space-around;
+    }
+
+    .type-title {
+        font-size: 22px;
+    }
+
+    .type-btn {
+        font-size: 20px;
+        width: 300px;
+        height: 60px;
     }
 }
 
@@ -2239,6 +2466,10 @@ h1, h2 {
     .hamburger,
     .toggle-menu {
         display: block;
+    }
+
+    .toggle-menu {
+        top: 10px;
     }
 
     .header-content {
@@ -2861,6 +3092,31 @@ h1, h2 {
     .footer-text {
         max-width: 647px;
     }
+
+
+    .check-close {
+        top: 24px;
+    }
+
+    .modal-content {
+        width: 650px;
+        height: 230px;
+        padding: 10px;
+    }
+
+    .modal-title {
+        font-size: 26px;
+    }
+    
+    .type-title {
+        font-size: 19px;
+    }
+    
+    .type-btn {
+        font-size: 17px;
+        width: 260px;
+        height: 52px;
+    }
 }
 
 @media (max-width: 755px) {
@@ -3296,6 +3552,32 @@ h1, h2 {
         width: 18px;
         height: 18px;
     }
+
+
+    .close::before, .close::after {
+        width: 23px;
+        top: 0;
+    }
+
+    .modal-title {
+        font-size: 24px;
+    }
+
+    .type-title {
+        font-size: 17px;
+    }
+
+    .type-btn {
+        font-size: 15px;
+        width: 232px;
+        height: 44px;
+        margin: 8px auto 0;
+    }
+
+    .modal-content {
+        width: 560px;
+        height: 194px;
+    }
 }
 
 @media (max-width: 630px) {
@@ -3486,6 +3768,21 @@ h1, h2 {
 
     .footer {
         height: 76px;
+    }
+
+    .close::before, .close::after {
+        width: 20px;
+    }
+
+    .modal-content {
+        width: 360px;
+        height: 300px;
+    }
+
+    .course-types {
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 8%;
     }
 }
 
@@ -3837,6 +4134,30 @@ h1, h2 {
         margin-right: 28px;
         top: 50%;
     }
+
+    .modal-content {
+        width: 328px;
+        height: 320px;
+    }
+
+    .modal-title {
+        font-size: 22px;
+        margin-top: 7%;
+    }
+
+    .course-types {
+        gap: 26px;
+    }
+
+    .type-title {
+        font-size: 16px;
+    }
+
+    .type-btn {
+        font-size: 14px;
+        width: 220px;
+        height: 40px;
+    }
 }
 
 @media (max-width: 390px) {
@@ -4063,6 +4384,11 @@ h1, h2 {
     .bottom-quotes {
         padding: 0 12px 0;
     }
+
+    .modal-content {
+        width: 300px;
+        height: 310px;
+    }
 }
 
 @media (max-width: 340px) {
@@ -4080,5 +4406,12 @@ h1, h2 {
 
     .question-title {
         font-size: 6.5px;
+    }
+}
+
+@media (max-width: 320px) {
+    .modal-content {
+        width: 280px;
+        height: 308px;
     }
 }
