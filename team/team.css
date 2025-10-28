@@ -138,12 +138,12 @@ h1 {
     height: 51px;
     border-radius: 4px;
     border: 1px solid #0066A9;
-    background: #DCF2FF;
+    color: #DCF2FF;
+    background: #0066A9;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: #000;
     transition: background 0.3s, color 0.3s;
 }
 
@@ -288,7 +288,7 @@ h1 {
     display: flex;
     flex-direction: row;
     gap: 100px;
-    padding-bottom: 44px;
+    padding-bottom: 50px;
 }
 
 .teacher {
@@ -339,11 +339,40 @@ h1 {
     font-size: 22px;
 }
 
+.buy-course {
+    display: flex; 
+    margin: 0 auto;
+    position: relative;
+    max-width: 478px;
+}
+
+.btn-wrap {
+    margin: 0 auto;
+}
+
+.buy-course-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 478px;
+    height: 70px;
+    border-radius: 12px;
+    border: 1.5px solid #0066A9;
+    background: #F3F8FF;
+    z-index: 1;
+    color: #0066A9;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 57px;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
 
 /* Footer */
 
 .footer {
-    margin-top: 56px;
+    margin-top: 50px;
     height: 236px;
     background: #F3F8FF;
 }
@@ -431,9 +460,15 @@ h1 {
     }
 
     .btn:hover {
-        background: #0066A9;
-        color: #DCF2FF; 
+        background: #DCF2FF;
+        color: #000; 
         transition: 0.3s;
+    }
+
+    .buy-course-btn:hover {
+        transition: 0.3s;
+        background: #0066A9;
+        color: #F3F8FF;
     }
 }
 
@@ -494,6 +529,10 @@ h1 {
     .sertificate-text {
         width: 275px;
         font-size: 21px;
+    }
+
+    .buy-course-btn {
+        font-size: 36px;
     }
 
     .footer {
@@ -599,7 +638,7 @@ h1 {
     }
 
     .teachers {
-        padding-bottom: 24px;
+        padding-bottom: 40px;
     }
 
     .teacher-photo {
@@ -624,7 +663,14 @@ h1 {
         font-size: 20px;
     }
 
+    .buy-course-btn {
+        font-size: 34px;
+        width: 440px;
+        height: 68px;
+    }
+
     .footer {
+        margin-top: 40px;
         height: 200px;
     }
 
@@ -722,7 +768,7 @@ h1 {
     }
 
     .teachers {
-        padding-bottom: 28px;
+        padding-bottom: 35px;
         gap: 60px;
         justify-content: normal;
     }
@@ -749,7 +795,14 @@ h1 {
         font-size: 18px;
     }
 
+    .buy-course-btn {
+        font-size: 30px;
+        width: 405px;
+        height: 66px;
+    }
+
     .footer {
+        margin-top: 35px;
         height: 188px;
     }
 
@@ -871,7 +924,7 @@ h1 {
     }
 
     .teachers {
-        padding-bottom: 12px;
+        padding-bottom: 32px;
         gap: 32px;
     }
 
@@ -901,7 +954,14 @@ h1 {
         font-size: 16px;
     }
 
+    .buy-course-btn {
+        font-size: 24px;
+        width: 350px;
+        height: 60px;
+    }
+
     .footer {
+        margin-top: 32px;
         height: 165px;
     }
 
@@ -1232,9 +1292,14 @@ h1 {
         height: 68px;
     }
 
+    .buy-course-btn {
+        font-size: 20px;
+        width: 282px;
+        height: 48px;
+    }
+
     .footer {
         height: 132px;
-        margin-top: 44px;
     }
 
     .footer-logo {
@@ -1368,9 +1433,14 @@ h1 {
         margin: 6px 0 6px;
     }
 
+    .buy-course-btn {
+        font-size: 18px;
+        width: 265px;
+        height: 46px;
+    }
+
     .footer {
         height: 130px;
-        margin-top: 32px;
     }
 
     .foot-logo {
@@ -1446,6 +1516,7 @@ h1 {
 
     .teachers {
         gap: 16px;
+        padding-bottom: 26px;
     }
 
     .teacher-photo {
@@ -1478,9 +1549,16 @@ h1 {
         font-size: 11px;
     }
 
+    .buy-course-btn {
+        font-size: 16px;
+        width: 240px;
+        height: 44px;
+    }
+
     .footer {
         height: 100px;
         position: relative;
+        margin-top: 26px;
     }
 
     .footer-logo {
@@ -1624,6 +1702,12 @@ h1 {
     .sertificate-text {
         width: 162px;
         font-size: 14px;
+    }
+
+    .buy-course-btn {
+        font-size: 14px;
+        width: 210px;
+        height: 40px;
     }
 
     .footer {
@@ -1797,6 +1881,7 @@ h1 {
 
     .teachers {
         gap: 28px;
+        padding-bottom: 24px;
     }
 
     .teacher-info, .sertificate {
@@ -1818,6 +1903,10 @@ h1 {
     .sertificate-text {
         width: 138px;
         font-size: 12px;
+    }
+
+    .buy-course-btn {
+        border: 1px solid #0066A9;
     }
 
     .footer {
@@ -1918,6 +2007,10 @@ h1 {
         margin-bottom: 20px;
     }
 
+    .teachers {
+        padding-bottom: 20px;
+    }
+
     .teacher-info, .sertificate {
         width: 166px;
     }
@@ -1944,7 +2037,7 @@ h1 {
     }
 
     .footer {
-        margin-top: 16px;
+        margin-top: 20px;
     }
 
     .foot-logo {
@@ -1979,6 +2072,12 @@ h1 {
 
     .founder-photo {
         max-height: 188px;
+    }
+
+    .buy-course-btn {
+        font-size: 13px;
+        width: 200px;
+        height: 38px;
     }
 }
 

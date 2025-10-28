@@ -138,12 +138,12 @@ h1, h2 {
     height: 51px;
     border-radius: 4px;
     border: 1px solid #0066A9;
-    background: #DCF2FF;
+    color: #DCF2FF;
+    background: #0066A9;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: #000;
     transition: background 0.3s, color 0.3s;
 }
 
@@ -232,7 +232,6 @@ h1, h2 {
     color: #657085;
     font-size: 16px;
     font-weight: 700;
-    text-transform: uppercase;
 }
 
 .intro-text-span {
@@ -240,8 +239,7 @@ h1, h2 {
     font-weight: normal;
     color: #1C202B;
     letter-spacing: 2.9px;
-    font-family: 'Cormorant Garamond', serif;
-    text-transform: lowercase;  
+    font-family: 'Cormorant Garamond', serif; 
 }
 
 .intro-btn {
@@ -578,7 +576,7 @@ h1, h2 {
 /* FAQ */
 
 .faq {
-    margin-bottom: 122px;
+    margin-bottom: 78px;
 }
 
 .faq-questions {
@@ -586,7 +584,7 @@ h1, h2 {
     flex-direction: column;
     gap: 52px;
     width: 83%;
-    margin: 56px auto 0;
+    margin: 56px auto 100px;
 }
 
 .question {
@@ -615,7 +613,7 @@ h1, h2 {
 }
 
 .activated {
-    background-color: #018961;
+    background-color: #0066A9;
     color: #FFF;
     border-radius: 9px 9px 0 0;
     height: 34px;
@@ -624,7 +622,7 @@ h1, h2 {
 
 .answer {
     margin-top: -22px;
-    background-color: #018961;
+    background-color: #0066A9;
     max-height: 0;
     width: 100%;
     max-width: 1464px;
@@ -639,11 +637,6 @@ h1, h2 {
 .answer-text {
     width: 89.6%;
     padding-left: 4%;
-}
-
-.answer-list {
-    margin: -12px;
-    padding-left: 94px;
 }
 
 .question-title:after {
@@ -669,6 +662,36 @@ h1, h2 {
     right: 50px;
     display: inline-block;
     background-size: contain;
+}
+
+.buy-course-blue {
+    display: flex; 
+    margin: 0 auto;
+    position: relative;
+    max-width: 478px;
+}
+
+.btn-wrap-blue {
+    margin: 0 auto;
+}
+
+.buy-course-btn-blue {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 478px;
+    height: 70px;
+    border-radius: 12px;
+    border: 1.5px solid #0066A9;
+    background: #F3F8FF;
+    z-index: 1;
+    color: #0066A9;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 57px;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
 }
 
 /* Footer */
@@ -832,6 +855,21 @@ h1, h2 {
     transition: background 0.3s, color 0.3s;
 }
 
+.type-btn-blue {
+    color: #fff;
+    font-size: 32px;
+    width: 465px;
+    height: 84px;
+    border-radius: 25px;
+    background: #0066A9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 16px auto 0;
+    transition: background 0.3s, color 0.3s;
+}
+
 .close-wrap {
     display: flex;
     justify-content: flex-end;
@@ -871,8 +909,8 @@ h1, h2 {
     }
 
     .btn:hover {
-        background: #0066A9;
-        color: #DCF2FF; 
+        background: #DCF2FF;
+        color: #000; 
         transition: 0.3s;
     }
 
@@ -884,13 +922,26 @@ h1, h2 {
 
     .question-title:hover {
         text-decoration: none;
-        background-color: #018961;
+        background-color: #0066A9;
         color: #FFF;
+    }
+
+    .buy-course-btn-blue:hover {
+        transition: 0.3s;
+        background: #0066A9;
+        color: #F3F8FF;
     }
 
     .type-btn:hover {
         background: #006f4e;
         color: #ffffff; 
+        transition: 0.3s;
+    }
+
+    .type-btn-blue:hover {
+        border: 2px solid #0066A9;
+        background: #F3F8FF;
+        color: #0066A9; 
         transition: 0.3s;
     }
 }
@@ -1131,12 +1182,12 @@ h1, h2 {
     }
 
     .faq {
-        margin-bottom: 100px;
+        margin-bottom: 68px;
     }
 
     .faq-questions {
         gap: 45px;
-        margin: 45px auto 0;
+        margin: 45px auto 68px;
     }
 
     .question-title {
@@ -1159,8 +1210,10 @@ h1, h2 {
         
     }
 
-    .answer-list {
-        padding-left: 83px;
+    .buy-course-btn-blue {
+        font-size: 34px;
+        width: 440px;
+        height: 68px;
     }
 
     .footer {
@@ -1457,11 +1510,11 @@ h1, h2 {
     }
 
     .faq {
-        margin-bottom: 85px;
+        margin-bottom: 50px;
     }
 
     .faq-questions {
-        margin: 40px auto 0;
+        margin: 40px auto 50px;
     }
 
     .question-title {
@@ -1494,12 +1547,14 @@ h1, h2 {
         width: 91.6%;
     }
 
-    .answer-list {
-        padding-left: 80px;
-    }
-
     .br-none {
         display: none;
+    }
+
+    .buy-course-btn-blue {
+        font-size: 30px;
+        width: 405px;
+        height: 66px;
     }
 
     .footer {
@@ -1792,10 +1847,6 @@ h1, h2 {
         bottom: -12%;
     }
 
-    .faq {
-        margin-bottom: 70px;
-    }
-
     .faq-questions {
         gap: 40px;
     }
@@ -1825,8 +1876,10 @@ h1, h2 {
         max-width: 930px;
     }
 
-    .answer-list {
-        padding-left: 73px;
+    .buy-course-btn-blue {
+        font-size: 24px;
+        width: 350px;
+        height: 60px;
     }
 
     .footer {
@@ -2350,12 +2403,12 @@ h1, h2 {
     }
 
     .faq {
-        margin-bottom: 60px;
+        margin-bottom: 50px;
     }
 
     .faq-questions {
         gap: 28px;
-        margin: 28px auto 0;
+        margin: 28px auto 50px;
     }
 
     .question-title {
@@ -2383,8 +2436,10 @@ h1, h2 {
         max-width: 772px;
     }
 
-    .answer-list {
-        padding-left: 63px;
+    .buy-course-btn-blue {
+        font-size: 20px;
+        width: 300px;
+        height: 54px;
     }
 
     .footer {
@@ -2820,11 +2875,11 @@ h1, h2 {
     }
 
     .faq {
-        margin-bottom: 54px;
+        margin-bottom: 44px;
     }
 
     .faq-questions {
-        margin: 24px auto 0;
+        margin: 24px auto 44px;
     }
 
     .question-title {
@@ -2852,8 +2907,10 @@ h1, h2 {
         max-width: 747px;
     }
 
-    .answer-list {
-        padding-left: 60px;
+    .buy-course-btn-blue {
+        font-size: 20px;
+        width: 282px;
+        height: 48px;
     }
 
     .footer {
@@ -2923,8 +2980,13 @@ h1, h2 {
         max-width: 820px;
     }
 
+    .intro-text {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
     .intro-text-span {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .footer-text {
@@ -2944,6 +3006,7 @@ h1, h2 {
 
     .intro-text {
         font-size: 12px;
+        max-width: 500px;
     }
 
     .intro-text-span {
@@ -3063,8 +3126,10 @@ h1, h2 {
         padding-left: 20px;
     }
 
-    .answer-list {
-        padding-left: 50px;
+    .buy-course-btn-blue {
+        font-size: 18px;
+        width: 265px;
+        height: 46px;
     }
 
     .footer {
@@ -3139,6 +3204,10 @@ h1, h2 {
 
     .btn {
         font-size: 12px;
+    }
+
+    .intro-text {
+        max-width: 400px;
     }
 
     .about-us {
@@ -3251,8 +3320,10 @@ h1, h2 {
         padding-left: 18px;
     }
 
-    .answer-list {
-        padding-left: 48px;
+    .buy-course-btn-blue {
+        font-size: 16px;
+        width: 240px;
+        height: 44px;
     }
 
     .footer {
@@ -3314,6 +3385,7 @@ h1, h2 {
 
     .intro-text {
         font-size: 11px;
+        max-width: 370px;
     }
 
     .intro-text-span {
@@ -3528,15 +3600,21 @@ h1, h2 {
     }
 
     .faq {
-        margin-bottom: 48px;
+        margin-bottom: 32px;
     }
 
     .faq-questions {
-        margin: 20px auto 0;
+        margin: 20px auto 40px;
     }
 
     .question-title {
         letter-spacing: 0.4px;
+    }
+
+    .buy-course-btn-blue {
+        font-size: 14px;
+        width: 210px;
+        height: 40px;
     }
 
     .footer {
@@ -3791,6 +3869,10 @@ h1, h2 {
         max-width: 470px;
     }   
 
+    .intro-text {
+        max-width: 350px;
+    }
+
     .features {
         gap: 2%;
     }
@@ -3897,6 +3979,10 @@ h1, h2 {
         font-size: 8.5px;
     }
 
+    .buy-course-btn-blue {
+        border: 1px solid #0066A9;
+    }
+
     .footer-logo {
         margin-left: 20px;
     }
@@ -3913,6 +3999,7 @@ h1, h2 {
 
     .intro-text {
         font-size: 10px;
+        max-width: 320px;
     }
 
     .intro-text-span {
@@ -4099,10 +4186,6 @@ h1, h2 {
         margin-top: -16px;
     }
 
-    .answer-list {
-        padding-left: 40px;
-    }
-
     .footer {
         height: 60px;
     }
@@ -4181,6 +4264,7 @@ h1, h2 {
 
     .intro-text {
         font-size: 9px;
+        max-width: 290px;
     }
 
     .intro-text-span {
@@ -4343,10 +4427,6 @@ h1, h2 {
         padding-left: 12px;
     }
 
-    .answer-list {
-        padding-left: 35px;
-    }
-
     .foot-logo {
         width: 30px;
         height: 30px;
@@ -4383,6 +4463,12 @@ h1, h2 {
     
     .bottom-quotes {
         padding: 0 12px 0;
+    }
+
+    .buy-course-btn-blue {
+        font-size: 13px;
+        width: 200px;
+        height: 38px;
     }
 
     .modal-content {
